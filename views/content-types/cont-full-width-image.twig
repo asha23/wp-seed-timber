@@ -1,0 +1,34 @@
+
+{% set con = content_block %}
+
+{% if(con.parallax) %}
+
+	<section class="container-fluid full-width-image img-respond" data-parallax="scroll" data-image-src="{{TimberImage(con.image).src}}" style="background-size: 100% auto;"></section>
+
+{% else %}
+
+	<section class="container-fluid full-width-image">
+
+		<figure class="image">
+			<img src="{{TimberImage(con.image).src}}" alt="{{TimberImage(con.image).alt}}" class="img-respond">
+		</figure>
+
+		{% if con.turn_on_overlay %}
+
+			<article class="overlay-text">
+
+				<header>
+					<h1>{{con.title}}</h1>
+				</header>
+
+				<aside class="text">
+					{{con.text}}
+				</aside>
+
+			</article>
+
+		{% endif %}
+
+	</section>
+
+{% endif %}

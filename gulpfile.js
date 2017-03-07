@@ -137,7 +137,7 @@ gulp.task('bootstrap-scripts', function () {
 
 gulp.task('fontawesome', function () {
     return gulp.src(config.bowerPath + 'components-font-awesome/fonts/**/**.*')
-        .pipe(gulp.dest(config.dest + '/fonts'))
+        .pipe(gulp.dest(config.destCss + '/fonts'))
 });
 
 gulp.task('fontawesome-stylesheet', function () {

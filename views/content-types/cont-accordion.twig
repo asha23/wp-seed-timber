@@ -1,0 +1,33 @@
+{# Accordion Logic #}
+
+{% set count = 0 %}
+{% set con = content_block %}
+
+<section class="container accordion-container">
+	<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+		<div class="panel panel-default">
+
+			{% for accord in con.accordion %}
+
+				<div class="panel-heading" role="tab" id="heading_{{count}}">
+
+					<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse_{{count}}" class="title" aria-expanded="true" aria-controls="collapse_{{count}}">
+						<h4 class="accordion-title">{{ accord.title }} <i class="fa fa-plus"></i></h4>
+					</a>
+
+					<div id="collapse_{{count}}" class="panel-collapse collapse {{ (count == 0) ? 'in' : '' }}"  role="tabpanel" aria-labelledby="heading_{{count}}">
+
+						<div class="panel-body">
+							{{ accord.content }}
+						</div>
+
+					</div>
+
+				</div>
+
+				{% set count = count + 1 %}
+
+			{% endfor %}
+		</div>
+	</div>
+</section>

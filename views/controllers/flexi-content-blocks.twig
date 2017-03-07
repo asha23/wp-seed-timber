@@ -1,0 +1,29 @@
+{% block content %}
+	{% for post in posts %}
+		{% for content_block in post.get_field('global_content_types') %}
+
+			{% if content_block.acf_fc_layout == 'content_text_block' %}
+				{% include '/content-types/cont-text-block.twig' %}
+			{% elseif content_block.acf_fc_layout == 'content_downloads' %}
+				{% include 'content-types/cont-downloads.twig' %}
+			{% elseif content_block.acf_fc_layout == 'content_full_width_image' %}
+				{% include 'content-types/cont-full-width-image.twig' %}
+			{% elseif content_block.acf_fc_layout == 'content_image_gallery' %}
+				{% include 'content-types/cont-image-gallery.twig' %}
+			{% elseif content_block.acf_fc_layout == 'content_video' %}
+				{% include 'content-types/cont-video.twig' %}
+			{% elseif content_block.acf_fc_layout == 'content_table' %}
+				{% include 'content-types/cont-text-block.twig' %}
+			{% elseif content_block.acf_fc_layout == 'content_accordion' %}
+				{% include 'content-types/cont-accordion.twig' %}
+			{% elseif content_block.acf_fc_layout == 'content_padding' %}
+				{% include 'content-types/cont-padding.twig' %}
+			{% elseif content_block.acf_fc_layout == 'teasers_3x3' %}
+				{% include 'content-types/cont-teasers-3x3.twig' %}
+			{% elseif content_block.acf_fc_layout == 'content_category_block' %}
+				{% include 'content-types/cont-category.twig' %}
+			{% endif %}
+
+		{% endfor %}
+	{% endfor %}
+{% endblock %}
