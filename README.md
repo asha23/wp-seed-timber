@@ -1,5 +1,5 @@
 
-# Wordpress Seed Theme (Expert Version)
+# Wordpress Seed Theme (Expert Version with Timber/Twig functionality)
 
 This is a simple Bootstrap 3 seed theme with Bower and Gulp dependency and build management. I have removed as much bloat as possible from this theme, so it doesn't have multilanguage support, widgets or sidebars. It should be considered a base theme for developing using Advanced Custom Fields and using WordPress as a pure CMS.
 
