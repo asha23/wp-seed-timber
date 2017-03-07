@@ -1,0 +1,29 @@
+// ===========================================================================================================
+// INCLUDES
+// ===========================================================================================================
+
+@import "core/mixins";
+
+// BOOTSTRAP LAYOUT
+
+@import "bootstrap/custom-variables";
+@import "bootstrap/custom-bootstrap";
+
+// FONT AWESOME
+
+@import "fontawesome/font-awesome.css";
+
+// LIGHTGALLERY
+
+@import "lightgallery/lightgallery.css";
+
+.lg-outer .lg-item {
+    background: url("../images/loading.gif") no-repeat scroll center center transparent;
+}
+
+// PARTIALS
+
+@import "core/globals";
+@import "core/typography";
+@import "core/colours";
+@import "core/blocks";
