@@ -1,45 +1,6 @@
 <?php
 
-if ( ! class_exists( 'Timber' ) ) {
-	add_action( 'admin_notices', function() {
-			echo '<div class="error"><p>Timber not activated. Make sure you activate the plugin in <a href="' . esc_url( admin_url( 'plugins.php#timber' ) ) . '">' . esc_url( admin_url( 'plugins.php' ) ) . '</a></p></div>';
-		} );
-	return;
-}
-
-Timber::$dirname = array('views');
-
-class ArloTwig extends TimberSite {
-
-	function __construct() {
-		add_filter( 'timber_context', array( $this, 'add_to_context' ) );
-		add_filter( 'get_twig', array( $this, 'add_to_twig' ) );
-		parent::__construct();
-	}
-
-	// Register variables for using in twig template file & Add to context so it can be accessed globally.
-	function add_to_context( $context ) {
-		$content[''] = new TimberMenu('');
-		//globally assigned theme options
-		$context['domain']      = get_bloginfo('siteurl');
-		$context['ajax_url']    = admin_url('admin-ajax.php');
-		$context['notes'] 		= 'These values are available everytime you call Timber::get_context();';
-		$context['menu'] 		= new TimberMenu();
-		$context['site'] 		= $this;
-		$context['options'] 	= get_fields('option');
-		return $context;
-	}
-
-	function add_to_twig( $twig ) {
-		/* this is where you can add your own fuctions to twig */
-		$twig->addExtension( new Twig_Extension_StringLoader() );
-		$twig->addFilter( 'str_repeat', new Twig_Filter_Function( 'str_repeat' ) );
-		return $twig;
-	}
-
-}
-
-new ArloTwig();
+// BE CAREFUL IN HERE
 
 add_action( 'after_setup_theme', 'seed_ahoy', 16 );
 
@@ -231,7 +192,7 @@ function rw_title( $title, $sep, $seplocation ) {
     // Add a page number if necessary:
 
     if ( $paged >= 2 || $page >= 2 )
-            $title .= " {$sep} " . sprintf( __( 'Page %s', 'dbt' ), max( $paged, $page ) );
+            $title .= " {$sep} " . sprintf( __( 'Page %s', 'SEEDtheme' ), max( $paged, $page ) );
             return $title;
 }
 
@@ -253,7 +214,7 @@ function remove_dashboard_meta() {
 add_action( 'admin_init', 'remove_dashboard_meta' );
 
 //==============================================================================
-// REMOVE SOME USELESS MENU ITEMS UNDER Appearance
+// REMOVE SOME USELESS MENU ITEMS UNDER APPEARANCE
 //==============================================================================
 
 function remove_menu_items(){
@@ -271,6 +232,6 @@ add_action( 'after_setup_theme','remove_background_menu_item', 100 );
 //==============================================================================
 
 function custom_login_logo() {
-	echo '<style type="text/css">h1 a { background-image: url('.get_bloginfo('template_directory').'/build/images/custom-login-logo.png) !important; height:82px!important; background-size:164px!important; width:200px!important;}</style>';
+	echo '<style type="text/css">h1 a { background-image: url('.get_template_directory_uri().'/build/images/custom-login-logo.png) !important; height:82px!important; background-size:164px!important; width:200px!important;}</style>';
 }
 add_action('login_head', 'custom_login_logo');

@@ -2,7 +2,7 @@
 // INCLUDES
 // ===========================================================================================================
 
-@import "core/mixins";
+@import "partials/mixins";
 
 // BOOTSTRAP LAYOUT
 
@@ -11,19 +11,34 @@
 
 // FONT AWESOME
 
-@import "fontawesome/font-awesome.css";
+@import "fontawesome/font-awesome";
 
 // LIGHTGALLERY
 
-@import "lightgallery/lightgallery.css";
+@import "lightgallery/lightgallery";
 
 .lg-outer .lg-item {
     background: url("../images/loading.gif") no-repeat scroll center center transparent;
 }
 
-// PARTIALS
+// GLOBALS
 
-@import "core/globals";
-@import "core/typography";
-@import "core/colours";
-@import "core/blocks";
+@import "partials/globals";
+@import "partials/typography";
+@import "partials/colours";
+
+// CONTENT BLOCKS
+
+@import "content-blocks/accordion";
+@import "content-blocks/downloads";
+@import "content-blocks/full-width-image";
+@import "content-blocks/image-gallery";
+@import "content-blocks/padding";
+@import "content-blocks/table";
+@import "content-blocks/teasers-3x3";
+@import "content-blocks/text-block";
+@import "content-blocks/video";
+
+// SITE SPECIFIC
+
+@import "partials/blocks";

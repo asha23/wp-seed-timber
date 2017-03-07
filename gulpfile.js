@@ -13,21 +13,21 @@
 // ===========================================================================================================
 
 var config = {
-	uploadPath:					'../../uploads',
-	bowerPath:      			'bower/',
-	bowerPathAll:  				'bower/**/*',
-	jsPath:         			'library/js/',
-	jsPathAll:     				'library/js/*.js',
-	jsPathVendor:   			'library/js/vendor-libs/',
-	temp:           			'library/temp',
-	scssPath:       			'library/scss',
-	scssPathAll:    			'library/scss/**/*.scss',
-	imgPath:        			'build/images',
-	destImg:        			'build/images/**/*.{gif,png,jpg,jpeg,svg}',
-	dest:           			'build',
-	destCss:        			'build/css',
-	destJs:         			'build/js',
-	modernizr:                  'library/js/modernizr',
+	uploadPath:				'../../uploads',
+	bowerPath:      		'bower/',
+	bowerPathAll:  			'bower/**/*',
+	jsPath:         		'library/js/',
+	jsPathAll:     			'library/js/*.js',
+	jsPathVendor:   		'library/js/vendor-libs/',
+	temp:           		'library/temp',
+	scssPath:       		'library/scss',
+	scssPathAll:    		'library/scss/**/*.scss',
+	imgPath:        		'build/images',
+	destImg:        		'build/images/**/*.{gif,png,jpg,jpeg,svg}',
+	dest:           		'build',
+	destCss:        		'build/css',
+	destJs:         		'build/js',
+	modernizr:               'library/js/modernizr',
 };
 
 // ===========================================================================================================
@@ -43,6 +43,16 @@ var jsFileList = [
 	// config.jsPathVendor  + 'lg-thumbnail/lg-thumbnail.js',
 	// config.jsPathVendor  + 'lg-video/lg-video.js',
 	// config.jsPathVendor  + 'lg-fullscreen/lg-fullscreen.js',
+	// config.jsPathVendor 	+ 'imagesloaded/imagesloaded.js',
+	// config.jsPathVendor 	+ 'isotope/isotope.pkgd.js',
+	// config.jsPathVendor 	+ 'cycle2/jquery.cycle2.js',
+	// config.jsPathVendor 	+ 'slick/slick.js',
+	// config.jsPathVendor 	+ 'matchMedia/matchMedia.js',
+	// config.jsPathVendor 	+ 'enquire/enquire.js',
+	// config.jsPathVendor 	+ 'js-cookie/js.cookie.js',
+	// config.jsPathVendor 	+ 'matchHeight/jquery.matchHeight.js',
+	// config.jsPathVendor 	+ 'velocity/velocity.js',
+	// config.jsPathVendor 	+ 'create_js/createjs.min.js',
 	config.jsPath 			+ '/scripts.js'
 ];
 
@@ -51,6 +61,7 @@ var jsFileList = [
 var scssFilePaths = [
     config.bowerPath 		+ 'components-font-awesome/scss/',
     config.bowerPath 		+ 'lightgallery/dist/css/',
+	config.bowerPath 		+ 'slick-carousel/slick/'
 ];
 
 var bootstrapPath = [
@@ -71,6 +82,9 @@ var cleanCSS = require('gulp-clean-css');
 var sourcemaps = require('gulp-sourcemaps');
 var plumber = require('gulp-plumber');
 // Load all the other plugins by referring to package.json
+
+
+
 
 // ===========================================================================================================
 // TASKS
@@ -107,18 +121,32 @@ gulp.task('bower-files', [
 	'bootstrap-scripts',
 	'fontawesome',
 	'fontawesome-stylesheet',
-	'lightgallery-css',
-	'lightgallery-fonts',
-	'lightgallery-img',
-	'lightgallery-thumbnail',
-	'lightgallery-video',
-	'lightgallery-fullscreen',
-	'lightgallery'
+	'lg-css',
+	'lg-fonts',
+	'lg-img',
+	'lg-thumbnail',
+	'lg-video',
+	'lg-fullscreen',
+	'lightgallery',
+	'imagesloaded',
+	'isotope',
+	'slick-scripts',
+	'slick-fonts',
+	'slick-css',
+	'slick-scss',
+	'slick-img',
+	'enquire',
+	'matchheight',
+	'cycle2',
+	'respond',
+	'flexibility',
+	'bootstrap-validator',
+	'js-cookie',
+	'velocity'
 ]);
 
 // ===========================================================================================================
-// Move all the bits and bobs from the bower folder into the project
-// You don't have to do this, and can refer directly to the bower folder if you want to
+// Move all the bits and bobs from the bower folder into the project (You don't have to do this, and can refer directly to the bower folder if you want to)
 // ===========================================================================================================
 
 // Copy bootstrap
@@ -137,7 +165,7 @@ gulp.task('bootstrap-scripts', function () {
 
 gulp.task('fontawesome', function () {
     return gulp.src(config.bowerPath + 'components-font-awesome/fonts/**/**.*')
-        .pipe(gulp.dest(config.dest + '/fonts'))
+        .pipe(gulp.dest(config.destCss + '/fonts'))
 });
 
 gulp.task('fontawesome-stylesheet', function () {
@@ -145,21 +173,21 @@ gulp.task('fontawesome-stylesheet', function () {
         .pipe(gulp.dest(config.scssPath + '/fontawesome'))
 });
 
-// Copy lightgallery fonts in destination dir
+// Copy lightgallery fonts to destination dir
 
-gulp.task('lightgallery-fonts', function () {
+gulp.task('lg-fonts', function () {
     return gulp.src(config.bowerPath + 'lightgallery/dist/fonts/**/**.*')
-        .pipe(gulp.dest(config.dest + '/fonts'))
+        .pipe(gulp.dest(config.destCss + '/fonts'))
 });
 
-// Copy lightgallery images in destination dir
+// Copy lightgallery images to destination dir
 
-gulp.task('lightgallery-img', function () {
+gulp.task('lg-img', function () {
     return gulp.src(config.bowerPath + 'lightgallery/dist/img/**/**.*')
         .pipe(gulp.dest(config.dest + '/images'))
 });
 
-gulp.task('lightgallery-css', function () {
+gulp.task('lg-css', function () {
     return gulp.src(config.bowerPath + 'lightgallery/dist/css/lightgallery.css')
         .pipe(gulp.dest(config.scssPath + '/lightgallery'))
 });
@@ -171,21 +199,117 @@ gulp.task('lightgallery', function() {
         .pipe(gulp.dest(config.jsPathVendor + '/lightgallery'))
 });
 
-gulp.task('lightgallery-video', function() {
+gulp.task('lg-video', function() {
 	return gulp.src(config.bowerPath + 'lg-video/dist/lg-video.js')
         .pipe(gulp.dest(config.jsPathVendor + '/lg-video'))
 });
 
-gulp.task('lightgallery-fullscreen', function() {
+gulp.task('lg-fullscreen', function() {
 	return gulp.src(config.bowerPath + 'lg-fullscreen/dist/lg-fullscreen.js')
         .pipe(gulp.dest(config.jsPathVendor + '/lg-fullscreen'))
 });
 
-gulp.task('lightgallery-thumbnail', function() {
+gulp.task('lg-thumbnail', function() {
 	return gulp.src(config.bowerPath + 'lg-thumbnail/dist/lg-thumbnail.js')
         .pipe(gulp.dest(config.jsPathVendor + '/lg-thumbnail'))
 });
 
+// Copy imagesloaded in destination dir
+
+gulp.task('imagesloaded', function() {
+	return gulp.src(config.bowerPath + 'imagesloaded/imagesloaded.js')
+        .pipe(gulp.dest(config.jsPathVendor + '/imagesloaded'))
+});
+
+// Copy isotope in destination dir
+
+gulp.task('isotope', function() {
+	return gulp.src(config.bowerPath + 'isotope/dist/**.*')
+        .pipe(gulp.dest(config.jsPathVendor + '/isotope'))
+});
+
+// Copy enquire in destination dir
+
+gulp.task('enquire', function() {
+	return gulp.src(config.bowerPath + 'enquire/dist/**.*')
+        .pipe(gulp.dest(config.jsPathVendor + '/enquire'))
+});
+
+// Copy slickslider in destination dir
+
+gulp.task('slick-scripts', function() {
+	return gulp.src(config.bowerPath + 'slick-carousel/slick/slick.js')
+        .pipe(gulp.dest(config.jsPathVendor + '/slick'))
+});
+
+gulp.task('slick-scss', function() {
+	return gulp.src(config.bowerPath + 'slick-carousel/slick/slick-theme.scss')
+        .pipe(gulp.dest(config.scssPath + '/slick'))
+});
+
+gulp.task('slick-css', function() {
+	return gulp.src(config.bowerPath + 'slick-carousel/slick/slick.css')
+        .pipe(gulp.dest(config.scssPath + '/slick'))
+})
+
+gulp.task('slick-fonts', function() {
+	return gulp.src(config.bowerPath + 'slick-carousel/slick/fonts/**.*')
+        .pipe(gulp.dest(config.destCss + '/fonts'))
+});
+
+gulp.task('slick-img', function() {
+	return gulp.src(config.bowerPath + 'slick-carousel/slick/ajax-loader.gif')
+        .pipe(gulp.dest(config.dest + '/images'))
+});
+
+// Copy matchheight in destination dir
+
+gulp.task('matchheight', function() {
+	return gulp.src(config.bowerPath + 'matchHeight/dist/**.*')
+        .pipe(gulp.dest(config.jsPathVendor + '/matchHeight'))
+});
+
+// Copy cycle 2 in destination dir
+
+gulp.task('cycle2', function () {
+    return gulp.src(config.bowerPath + 'jquery-cycle2/build/jquery.cycle2.js')
+        .pipe(gulp.dest(config.jsPathVendor + '/cycle2'))
+});
+
+// Copy respond in destination dir
+
+gulp.task('respond', function () {
+    return gulp.src(config.bowerPath + 'respond/src/**.*')
+        .pipe(gulp.dest(config.jsPathVendor + '/respond'))
+});
+
+// Copy flexibility in destination dir
+
+gulp.task('flexibility', function () {
+    return gulp.src(config.bowerPath + 'flexibility/flexibility.js')
+        .pipe(gulp.dest(config.jsPathVendor + '/flexibility'))
+});
+
+// Bootstrap form validation
+
+gulp.task('bootstrap-validator', function () {
+    return gulp.src(config.bowerPath + 'bootstrap-validator/dist/validator.js')
+        .pipe(gulp.dest(config.jsPathVendor + '/bootstrap-validator'))
+});
+
+// Cookies
+
+gulp.task('js-cookie', function () {
+    return gulp.src(config.bowerPath + 'js-cookie/src/js.cookie.js')
+        .pipe(gulp.dest(config.jsPathVendor + '/js-cookie'))
+});
+
+// Velocity
+
+gulp.task('velocity', function () {
+    return gulp.src(config.bowerPath + 'velocity/velocity.js')
+        .pipe(gulp.dest(config.jsPathVendor + '/velocity'))
+});
 
 // Errors
 
@@ -256,6 +380,7 @@ gulp.task('scripts', function () {
 		}))
 		.pipe(sourcemaps.write())
 		.pipe(gulp.dest(config.destJs))
+
 });
 
 // Linting task

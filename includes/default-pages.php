@@ -1,4 +1,5 @@
 <?php
+
 // Do some initial stuff
 
 $default_pages_generated = get_option( 'default_pages_generated', false );

@@ -6,7 +6,7 @@
 //==============================================================================
 
 function admin_styles() {
-	wp_register_style('theme-options-styles', get_bloginfo('template_url') . '/includes/css/theme-options.css');
+	wp_register_style('theme-options-styles', get_template_directory_uri() . '/includes/css/theme-options.css');
 	wp_enqueue_style('theme-options-styles');
 }
 

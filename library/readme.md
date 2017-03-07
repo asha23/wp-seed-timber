@@ -1,3 +1,3 @@
-#Library
+# Library
 
-This is where all the scss and javascript is stored, ready for the build process
+This is where the scss and javascript lives.
