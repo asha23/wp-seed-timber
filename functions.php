@@ -13,7 +13,3 @@ require_once( 'includes/scripts-styles.php' ); // Enqueue scripts and styles.
 require_once( 'includes/menus.php' ); // Add Menu functions.
 require_once( 'includes/custom-post-types.php' ); // Create useful custom post types. Can be changed or removed
 require_once( 'includes/default-pages.php' ); // Create default pages on theme activation (and only the first time).
-
-// .. Add your own here
-
-?>

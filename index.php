@@ -1,5 +1,12 @@
-<?php 
-	get_header();
-	get_template_part( 'views/loops/loop', 'generic' );
-	get_footer();
-?>
+<?php
+/**
+ * The main front page template file
+ *
+ */
+
+$context = Timber::get_context();
+$context['posts'] = Timber::get_posts();
+
+$templates = array( 'index.twig' );
+
+Timber::render( $templates, $context );

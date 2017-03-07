@@ -1,7 +1,7 @@
 <footer id="footer" class="container">
     <div class="row">
         <article>
-            &copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?>
+            &copy;  {{"now"|date('Y')}} {{function('bloginfo','name')}}
         </div>
         <article>
             By using this website, you agree to our cookie policy

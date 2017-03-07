@@ -1,10 +1,12 @@
+<?php
+/**
+ * The main front page template file
+ *
+ */
 
-<?php get_header(); ?>
+$context = Timber::get_context();
+$context['posts'] = Timber::get_posts();
 
-<div class="container">
-	<section class="row">
-		<?php get_template_part( 'views/common/main', '404' ); ?>
-	</section>
-</div>
+$templates = array( '404.twig' );
 
-<?php get_footer(); ?>
+Timber::render( $templates, $context );
