@@ -112,22 +112,22 @@ This is for use with Advanced Custom Fields. You will find some fields already s
 /build
 -----
 
-This is the build folder for deployment. You will find the images and fonts folder in here. You shouldn't save anything else into this folder, as Gulp will compile everything for you
+This is the build folder for deployment. You will find the images and fonts folder in here.
 
 /includes
 --------
 
-This is all the core theme php. Files in here are included from the site's root functions.php file. Generally speaking you shouldn't need to edit anything in here apart from custom-post-types.php and menus.php - There is a helper-functions.php file which you can add any handy snippets to.
+This is all the core theme php. Files in here are included from the site's root functions.php file. Generally speaking you shouldn't need to edit anything in here, but if you do, simply create a new file and update the functions.php
 
 /library
 -------
 
-This is where you can edit your ```styles.scss``` file and also ```scripts.js``` - This is also where all the Bower components are added.
+This is where you can edit your ```styles.scss``` file and also ```scripts.js```
 
 /views
 -----
 
-If you use WordPress Template parts correctly (or standard php includes if you'd prefer), you can separate site content into this views folder.
+This is where all the .twig files live
 
 /bower
 ------
