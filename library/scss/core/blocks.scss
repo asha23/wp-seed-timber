@@ -18,6 +18,11 @@
 		@include fs(40,42);
 	}
 
+	&.header-margins {
+		margin-top:30px;
+		margin-bottom:30px;
+	}
+
 
 }
 

@@ -4,9 +4,16 @@
 {% set toggle = con.toggle %}
 {% set title_type = con.title_type %}
 {% set title_text = con.title_text %}
+{% set title_margin = con.add_margins %}
+
+{% if title_margin == 1 %}
+	{% set margin_class = "header-margins" %}
+{% else %}
+	{% set margin_class = "" %}
+{% endif %}
 
 {% if toggle == "1" %}
-	<section class="container-fluid custom-header">
+	<section class="container-fluid custom-header {{ margin_class }}">
 		<div class="container">
 			{% if title_type == "auto" %}
 				<h2>{{ post.post_title }}</h2>

@@ -294,6 +294,25 @@
                             "return_format": "value"
                         },
                         {
+                            "key": "field_58c02d290b82c",
+                            "label": "Add Margins",
+                            "name": "add_margins",
+                            "type": "true_false",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "20",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "",
+                            "default_value": 0,
+                            "ui": 0,
+                            "ui_on_text": "",
+                            "ui_off_text": ""
+                        },
+                        {
                             "key": "field_58c02a5cf2935",
                             "label": "Title Text",
                             "name": "title_text",
@@ -310,7 +329,7 @@
                                 ]
                             ],
                             "wrapper": {
-                                "width": "80",
+                                "width": "60",
                                 "class": "",
                                 "id": ""
                             },
@@ -1308,5 +1327,5 @@
     ],
     "active": 1,
     "description": "These are the main page based content blocks",
-    "modified": 1488989026
+    "modified": 1488989709
 }
