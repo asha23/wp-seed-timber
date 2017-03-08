@@ -11,4 +11,3 @@ vendor-libs
 build/manifest.json
 build/js
 build/css
-yarn.lock
