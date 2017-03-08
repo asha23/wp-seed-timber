@@ -1,5 +1,12 @@
 ////
 /// mixins.scss
 /// Mixins
-/// @author Your Name
+/// @author Ash Whiting
 ////
+
+@mixin fs($size:1.6, $line: $size){
+      font-size:   ($size * 10) + px;
+      line-height: ($line * 10) + px;
+      font-size:   ($size / 10) + rem;
+      line-height: ($line / 10)+ rem;
+}

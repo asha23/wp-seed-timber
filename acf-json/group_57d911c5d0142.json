@@ -226,6 +226,105 @@
                     "max": ""
                 },
                 {
+                    "key": "58c02983ca2cd",
+                    "name": "content_custom_header",
+                    "label": "Content - Custom Header",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_58c02b41c5b4a",
+                            "label": "Layout Title",
+                            "name": "layout_title",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_58c02992ca2ce",
+                            "label": "Toggle",
+                            "name": "toggle",
+                            "type": "true_false",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "",
+                            "default_value": 1,
+                            "ui": 0,
+                            "ui_on_text": "",
+                            "ui_off_text": ""
+                        },
+                        {
+                            "key": "field_58c02a30f2934",
+                            "label": "Title Type",
+                            "name": "title_type",
+                            "type": "radio",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "20",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "auto": "Auto",
+                                "custom": "Custom"
+                            },
+                            "allow_null": 0,
+                            "other_choice": 0,
+                            "save_other_choice": 0,
+                            "default_value": "auto",
+                            "layout": "vertical",
+                            "return_format": "value"
+                        },
+                        {
+                            "key": "field_58c02a5cf2935",
+                            "label": "Title Text",
+                            "name": "title_text",
+                            "type": "textarea",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_58c02a30f2934",
+                                        "operator": "==",
+                                        "value": "custom"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "80",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "maxlength": "",
+                            "rows": "",
+                            "new_lines": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                {
                     "key": "57d92aec80e20",
                     "name": "content_full_width_image",
                     "label": "Content - Full Width Image",
@@ -1209,5 +1308,5 @@
     ],
     "active": 1,
     "description": "These are the main page based content blocks",
-    "modified": 1488986202
+    "modified": 1488989026
 }

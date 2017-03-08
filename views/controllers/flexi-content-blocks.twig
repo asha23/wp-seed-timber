@@ -22,6 +22,8 @@
 				{% include 'content-types/cont-teasers.twig' %}
 			{% elseif content_block.acf_fc_layout == 'content_category_block' %}
 				{% include 'content-types/cont-category.twig' %}
+			{% elseif content_block.acf_fc_layout == 'content_custom_header' %}
+				{% include 'content-types/cont-header.twig' %}
 			{% endif %}
 
 		{% endfor %}

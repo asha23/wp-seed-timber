@@ -1,0 +1,18 @@
+{# Full width header #}
+
+{% set con = content_block %}
+{% set toggle = con.toggle %}
+{% set title_type = con.title_type %}
+{% set title_text = con.title_text %}
+
+{% if toggle == "1" %}
+	<section class="container-fluid custom-header">
+		<div class="container">
+			{% if title_type == "auto" %}
+				<h2>{{ post.post_title }}</h2>
+			{% else %}
+				<h2>{{ title_text }}</h2>
+			{% endif %}
+		</div>
+	</section>
+{% endif %}
