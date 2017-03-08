@@ -66,8 +66,9 @@ function seed_theme_support() {
 
 	// Custom thumbnail sizes (add as many as you like) - Or use a plugin. It's easier.
 
-	// add_image_size( 'general-thumb-600', 600, 150, true );
-	// add_image_size( 'general-thumb-300', 300, 100, true );
+	add_image_size( 'teaser-half', 524, 270, true );
+	add_image_size( 'teaser-full', 1100, 400, true );
+	add_image_size( 'teaser-main', 300, 300, true );
 
 	// wp custom background
 
@@ -235,3 +236,9 @@ function custom_login_logo() {
 	echo '<style type="text/css">h1 a { background-image: url('.get_template_directory_uri().'/build/images/custom-login-logo.png) !important; height:82px!important; background-size:164px!important; width:200px!important;}</style>';
 }
 add_action('login_head', 'custom_login_logo');
+
+//==============================================================================
+// ADD PAGE EXCERPTS
+//==============================================================================
+
+add_post_type_support( 'page', 'excerpt' );

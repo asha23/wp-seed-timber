@@ -88,3 +88,37 @@
 // ===================================
 // Video Gallery
 // ===================================
+
+
+// ===================================
+// 3X3 Teaser Block
+// ===================================
+
+.teaser-block {
+	.row {
+		.inner {
+
+		}
+
+		.teaser-full-width {
+			@include make-xs-column(12);
+		}
+
+		.teaser-half {
+			@include make-xs-column(12);
+			@include make-sm-column(6);
+		}
+
+		.teaser-third {
+			@include make-xs-column(12);
+			@include make-sm-column(6);
+			@include make-md-column(4);
+		}
+
+		.teaser-quarter {
+			@include make-xs-column(12);
+			@include make-sm-column(6);
+			@include make-md-column(3);
+		}
+	}
+}

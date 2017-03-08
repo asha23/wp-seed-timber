@@ -1,0 +1,69 @@
+{# Relationship Teaser Logic #}
+
+{% set con = content_block %}
+{% set teasers = con.teaser_component %}
+{% set teaser_header = con.teaser_header %}
+{% set teaser_header_text = con.teaser_header_text %}
+{% set teaser_row_number = con.row_number %}
+
+{% if teaser_row_number == "one" %}
+	{% set teaser_class = "teaser-full-width" %}
+	{% set teaser_img_size = "teaser-full-width" %}
+{% elseif teaser_row_number == "two" %}
+	{% set teaser_class = "teaser-half" %}
+	{% set teaser_img_size = "teaser-half" %}
+{% elseif teaser_row_number == "three" %}
+	{% set teaser_class = "teaser-third" %}
+	{% set teaser_img_size = "teaser-main" %}
+{% elseif teaser_row_number == "four" %}
+	{% set teaser_class = "teaser-quarter" %}
+	{% set teaser_img_size = "teaser-main" %}
+{% endif %}
+
+<section class="container teaser-block">
+	{% if teaser_header %}
+		<header>
+			<h2>{{ teaser_header }}</h2>
+		</header>
+	{% endif %}
+
+	{% if teaser_header_text %}
+		<article class="gallery-text">
+			{{ teaser_header_text }}
+		</article>
+	{% endif %}
+
+	<div class="row">
+
+			{% for teaser in teasers %}
+				{% set teaser_title = teaser.post_title %}
+				{% set content_type = teaser.global_content_types %}
+				{% set teaser_id = teaser.id %}
+				{% set teaser_thumb = teaser.thumbnail.src(teaser_img_size) %}
+				{% set teaser_excerpt = teaser.post_excerpt %}
+
+				<div class="inner {{ teaser_class }}">
+
+
+						<div class="panel panel-default teaser-item">
+								<figure class="panel-body">
+									<a href="{{ TimberPost(teaser_id).link }}">
+										<img src="{{ teaser_thumb }}" class="img-respond" alt="{{ teaser_title }}">
+									</a>
+								</figure>
+								<div class="panel-footer inner-overlay">
+									<div class="overlay-text">
+										<h4>{{ teaser_title }}</h4>
+										<p>{{ teaser_excerpt }}</p>
+										<a href="{{ TimberPost(teaser_id).link }}" class="btn btn-default">Read more <i class="fa fa-chevron-right"></i></a>
+									</div>
+								</div>
+						</div>
+
+				</div>
+
+
+
+			{% endfor %}
+	</div>
+</section>

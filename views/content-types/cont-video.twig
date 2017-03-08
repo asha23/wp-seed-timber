@@ -37,9 +37,11 @@
 						</div>
 					</div>
 
-					<img src="{{ TimberImage(vid_poster).src }}" class="img-respond" alt="{{ vid_title }}">
-
-					<div class="panel-body inner-overlay">
+					<figure class="panel-body">
+						<img src="{{ TimberImage(vid_poster).src }}" class="img-respond" alt="{{ vid_title }}">
+					</figure>
+					
+					<div class="panel-footer inner-overlay">
 						<div class="overlay-text">
 							<h4>{{ vid_title }}</h4>
 							<p>{{ vid_desc }}</p>

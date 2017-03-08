@@ -131,7 +131,7 @@
             {
                 "param": "page_template",
                 "operator": "==",
-                "value": "default"
+                "value": "page-content-blocks.php"
             }
         ]
     ],
@@ -143,7 +143,7 @@
     "hide_on_screen": [
         "the_content"
     ],
-    "active": 1,
+    "active": 0,
     "description": "Re-usable button cloner",
-    "modified": 1488976688
+    "modified": 1488983986
 }

@@ -51,13 +51,13 @@
 
 				{% if download_image %}
 
-					<figure>
+					<figure class="panel-body">
 						<img src="{{TimberImage(download_image).src}}" class="img-respond" alt="{{TimberImage(download_image).alt}}">
 					</figure>
 
 				{% endif %}
 
-				<aside class="panel-body">
+				<aside class="panel-footer">
 
 					<h4>{{link_title}}</h4>
 					{{download_text}}

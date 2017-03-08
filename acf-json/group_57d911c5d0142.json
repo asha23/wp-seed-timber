@@ -985,8 +985,8 @@
                 },
                 {
                     "key": "57d9123c9fc67",
-                    "name": "teasers_3x3",
-                    "label": "Teasers - 3x3",
+                    "name": "teaser_block",
+                    "label": "Content - Teaser Block",
                     "display": "block",
                     "sub_fields": [
                         {
@@ -1007,6 +1007,73 @@
                             "prepend": "",
                             "append": "",
                             "maxlength": ""
+                        },
+                        {
+                            "key": "field_58c01f9ed14cc",
+                            "label": "How Many Per Row",
+                            "name": "row_number",
+                            "type": "select",
+                            "instructions": "Please select how many teasers per row. You should then select this amount of teasers in the Relationship box below.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "one": "One (full width)",
+                                "two": "Two",
+                                "three": "Three",
+                                "four": "Four"
+                            },
+                            "default_value": [
+                                "three"
+                            ],
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "return_format": "value",
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_58c016ca002e4",
+                            "label": "Teaser Header",
+                            "name": "teaser_header",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_58c016d1002e5",
+                            "label": "Teaser Header Text",
+                            "name": "teaser_header_text",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 0,
+                            "delay": 1
                         },
                         {
                             "key": "field_57d91a8d9ed0f",
@@ -1134,15 +1201,13 @@
     "instruction_placement": "label",
     "hide_on_screen": [
         "the_content",
-        "excerpt",
         "discussion",
         "comments",
-        "featured_image",
         "categories",
         "tags",
         "send-trackbacks"
     ],
     "active": 1,
     "description": "These are the main page based content blocks",
-    "modified": 1488976654
+    "modified": 1488986202
 }
