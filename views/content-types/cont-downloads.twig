@@ -28,20 +28,14 @@
 			{% set link_title = dl.download_element_link_title %}
 
 			{% if button_type == "internal" %}
-
 				{% set target = "" %}
 				{% set url = dl.download_element_inturl %}
-
 			{% elseif button_type == "external" %}
-
 				{% set target = "target='_blank'" %}
 				{% set url = dl.download_element_exturl %}
-
 			{% elseif button_type == "file" %}
-
 				{% set target = "target='_blank'" %}
 				{% set url = dl.download_element_fileurl %}
-
 			{% endif %}
 
 
@@ -52,28 +46,22 @@
 				{% if download_image %}
 
 					<figure class="panel-body">
-						<img src="{{TimberImage(download_image).src}}" class="img-respond" alt="{{TimberImage(download_image).alt}}">
+						<img src="{{ TimberImage(download_image).src }}" class="img-respond" alt="{{ TimberImage(download_image).alt }}">
 					</figure>
 
 				{% endif %}
 
 				<aside class="panel-footer">
 
-					<h4>{{link_title}}</h4>
-					{{download_text}}
+					<h4>{{ link_title }}</h4>
+					{{ download_text }}
 
 					{% if button_type == "internal" %}
-
-						<a href="{{url}}" class="btn btn-default" {{target}}>Download</a>
-
+						<a href="{{ url }}" class="btn btn-default" {{ target }}>Download</a>
 					{% elseif button_type == "external" %}
-
-						<a href="{{url}}" class="btn btn-default" {{target}}>Download</a>
-
+						<a href="{{ url }}" class="btn btn-default" {{ target }}>Download</a>
 					{% elseif button_type == "file" %}
-
-						<a href="{{url}}" class="btn btn-default" {{target}}>Download</a>
-
+						<a href="{{ url }}" class="btn btn-default" {{ target }}>Download</a>
 					{% endif %}
 
 				</aside>

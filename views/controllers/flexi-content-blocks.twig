@@ -1,3 +1,5 @@
+{# Flexible content logic #}
+
 {% block content %}
 	{% for post in posts %}
 		{% for content_block in post.get_field('global_content_types') %}

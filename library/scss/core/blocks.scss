@@ -9,7 +9,6 @@
 // ===================================
 
 .custom-header {
-
 	background:$gray-lighter;
 	padding-bottom:26px;
 	padding-top:10px;
@@ -22,8 +21,6 @@
 		margin-top:30px;
 		margin-bottom:30px;
 	}
-
-
 }
 
 // ===================================
@@ -62,8 +59,11 @@
 // ===================================
 
 .accordion {
+
 	.panel-group {
+
 		.panel {
+
 			.panel-heading {
 				display:block;
 				text-decoration:none;
@@ -93,8 +93,10 @@
 
 .image-gallery,
 .video-gallery {
+
 	.light-gallery-images,
 	.light-gallery-videos {
+
 		.inner {
 			cursor:pointer;
 			@include make-sm-column(4);
@@ -113,11 +115,13 @@
 
 
 // ===================================
-// 3X3 Teaser Block
+// Teaser block
 // ===================================
 
 .teaser-block {
+
 	.row {
+
 		.inner {
 
 		}

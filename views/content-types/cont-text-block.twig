@@ -5,52 +5,39 @@
 <section class="container text-block">
 
 	{% if con.title %}
-
 		<header>
-			<h2>{{con.title}}</h2>
+			<h2>{{ con.title }}</h2>
 		</header>
-
 	{% endif %}
 
 	{% if con.block_type == "full-width" %}
-
 		<article class="full-width">
-
-			{{con.full_width_content}}
-
+			{{ con.full_width_content }}
 		</article>
-
 	{% elseif con.block_type == "split" %}
 
 		<div class="row">
-			<article class="col-md-{{con.left.column_width}} col-sm-6">
-
+			<article class="col-md-{{ con.left.column_width }} col-sm-6">
 				{% if con.left.image_or_plain_text == "plain-text" %}
-
-					{{con.left.text}}
-
+					{{ con.left.text }}
 				{% else %}
 
 					<figure>
-						<img src="{{TimberImage(con.left.image).src}}" class="img-responsive" alt="">
+						<img src="{{ TimberImage(con.left.image).src }}" class="img-responsive" alt="">
 					</figure>
 
 				{% endif %}
 
 			</article>
 
-			<article class="col-md-{{con.right.column_width}} col-sm-6">
+			<article class="col-md-{{ con.right.column_width }} col-sm-6">
 
 				{% if con.right.image_or_plain_text == "plain-text" %}
-
-					{{con.right.text}}
-
+					{{ con.right.text }}
 				{% else %}
-
 					<figure>
-						<img src="{{TimberImage(con.right.image).src}}" class="img-responsive" alt="">
+						<img src="{{ TimberImage(con.right.image).src }}" class="img-responsive" alt="">
 					</figure>
-
 				{% endif %}
 
 			</article>
