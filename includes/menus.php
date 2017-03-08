@@ -43,14 +43,14 @@ function seed_footer_links() {
 }
 
 // this is the fallback for header menu
-function seed_main_nav_fallback() {
-	wp_page_menu( array(
-		'show_home' => true,
-    	'menu_class' => 'nav top-nav clearfix',      	// adding custom nav class
-		'include'     => '',
-		'exclude'     => '',
-		'echo'        => true,
-        'link_before' => '',                            // before each link
-        'link_after' => ''                             	// after each link
-	) );
-}
+// function seed_main_nav_fallback() {
+// 	wp_page_menu( array(
+// 		'show_home' => true,
+//     	'menu_class' => 'nav top-nav clearfix',      	// adding custom nav class
+// 		'include'     => '',
+// 		'exclude'     => '',
+// 		'echo'        => true,
+//         'link_before' => '',                            // before each link
+//         'link_after' => ''                             	// after each link
+// 	) );
+// }

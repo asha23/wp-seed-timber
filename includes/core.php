@@ -192,7 +192,7 @@ function rw_title( $title, $sep, $seplocation ) {
     // Add a page number if necessary:
 
     if ( $paged >= 2 || $page >= 2 )
-            $title .= " {$sep} " . sprintf( __( 'Page %s', 'dbt' ), max( $paged, $page ) );
+            $title .= " {$sep} " . sprintf( __( 'Page %s', 'SEEDtheme' ), max( $paged, $page ) );
             return $title;
 }
 
@@ -232,6 +232,6 @@ add_action( 'after_setup_theme','remove_background_menu_item', 100 );
 //==============================================================================
 
 function custom_login_logo() {
-	echo '<style type="text/css">h1 a { background-image: url('.get_bloginfo('template_directory').'/build/images/custom-login-logo.png) !important; height:82px!important; background-size:164px!important; width:200px!important;}</style>';
+	echo '<style type="text/css">h1 a { background-image: url('.get_template_directory_uri().'/build/images/custom-login-logo.png) !important; height:82px!important; background-size:164px!important; width:200px!important;}</style>';
 }
 add_action('login_head', 'custom_login_logo');
