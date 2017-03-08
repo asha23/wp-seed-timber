@@ -1,6 +1,5 @@
 <?php
 
-
 //==============================================================================
 // SCRIPTS & ENQUEUEING
 //==============================================================================
@@ -25,12 +24,12 @@ function seed_scripts_and_styles() {
 		wp_enqueue_style( 'seed-stylesheet' );
 
 		wp_deregister_script( 'jquery' );
-		wp_register_script( 'jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js', false, '1.11.3', true);
+		wp_register_script( 'jquery', 'https://code.jquery.com/jquery-2.2.4.min.js', false, '2.2.4');
 		wp_register_script( 'scripts', get_stylesheet_directory_uri() . $assets['js'], array(), '', true );
 
 		// Do it.
-		wp_enqueue_script( 'modernizr' );
 		wp_enqueue_script( 'jquery' );
+		wp_enqueue_script( 'modernizr' );
 		wp_enqueue_script( 'scripts' );
 
 	}

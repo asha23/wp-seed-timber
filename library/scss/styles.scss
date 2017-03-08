@@ -2,7 +2,7 @@
 // INCLUDES
 // ===========================================================================================================
 
-@import "partials/mixins";
+@import "core/mixins";
 
 // BOOTSTRAP LAYOUT
 
@@ -21,24 +21,11 @@
     background: url("../images/loading.gif") no-repeat scroll center center transparent;
 }
 
-// GLOBALS
+// PARTIALS
 
-@import "partials/globals";
-@import "partials/typography";
-@import "partials/colours";
-
-// CONTENT BLOCKS
-
-@import "content-blocks/accordion";
-@import "content-blocks/downloads";
-@import "content-blocks/full-width-image";
-@import "content-blocks/image-gallery";
-@import "content-blocks/padding";
-@import "content-blocks/table";
-@import "content-blocks/teasers-3x3";
-@import "content-blocks/text-block";
-@import "content-blocks/video";
-
-// SITE SPECIFIC
-
-@import "partials/blocks";
+@import "core/globals";
+@import "core/typography";
+@import "core/colours";
+@import "core/blocks";
+@import "core/footer";
+@import "core/navbar";

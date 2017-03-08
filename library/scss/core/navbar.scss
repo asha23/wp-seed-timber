@@ -1,0 +1,143 @@
+////
+/// navbar.scss
+/// Navbar override template
+/// @author Ash Whiting
+////
+
+.navbar-default {
+	border-radius:0;
+	border:none;
+
+	.navbar-brand {
+
+		&:focus,
+		&:hover {
+
+		}
+	}
+
+	.navbar-text {
+	}
+
+	.navbar-nav {
+		> li > a {
+
+			&:focus,
+			&:hover {
+
+			}
+		}
+
+		> .active > a {
+			&,
+			&:focus,
+			&:hover {
+
+			}
+		}
+
+		> .disabled > a {
+			&,
+			&:focus,
+			&:hover {
+
+			}
+		}
+	}
+
+	// Animated hamburger
+
+	.navbar-toggle {
+
+		border: none;
+		padding: 0;
+		float: none;
+		text-align: center!important;
+		cursor:pointer;
+		background: transparent;
+		margin-right:0;
+		margin-top:20px;
+		margin-bottom:20px;
+
+		&:hover,
+		&:focus,
+		&:active,
+		&:link {
+			background: transparent!important;
+		}
+
+		div {
+			transition:all 0.5s ease-in-out;
+			margin:auto auto;
+			margin-bottom: 7px;
+			height: 7px;
+			width: 40px;
+			background: black;
+			border-radius:3px;
+		}
+
+		& div:nth-child(1).active {
+			transform: translateY(14px) rotate(45deg);
+			background: black;
+		}
+
+		& div:nth-child(2).active {
+			width: 0;
+			opacity: 0;
+		}
+
+		& div:nth-child(3).active {
+			transform: translateY(-14px) rotate(-45deg);
+			background: black;
+		}
+	}
+
+	.navbar-collapse,
+	.navbar-form {
+
+	}
+
+	// Dropdown menu items
+
+	.navbar-nav {
+
+		> .open > a {
+			&,
+			&:focus,
+			&:hover {
+
+			}
+		}
+
+		// Change styling of mobile nav
+
+		@media (max-width: $grid-float-breakpoint-max) {
+
+			.open .dropdown-menu {
+				> li > a {
+
+					&:focus,
+					&:hover {
+
+					}
+				}
+
+				> .active > a {
+					&,
+					&:focus,
+					&:hover {
+
+					}
+				}
+
+				> .disabled > a {
+					&,
+					&:focus,
+					&:hover {
+
+					}
+				}
+			}
+		}
+	}
+}

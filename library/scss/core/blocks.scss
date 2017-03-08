@@ -1,0 +1,90 @@
+////
+/// blocks.scss
+/// Blocks
+/// @author Ash Whiting
+////
+
+// ===================================
+// Text Block
+// ===================================
+
+// ===================================
+// Full Width image
+// ===================================
+
+.full-width-image {
+	position:relative;
+	padding:0;
+
+	.overlay-text {
+		position:absolute;
+		text-align:center;
+
+		@media (min-width:$screen-xs-max) {
+			left:0;
+			bottom:0;
+			right:0;
+			padding:30px 50px;
+		}
+
+		@media (max-width:$screen-xs-max) {
+			position:relative;
+			padding:10px 0;
+			clear:both;
+		}
+	}
+}
+
+// ===================================
+// Accordion
+// ===================================
+
+.accordion {
+	.panel-group {
+		.panel {
+			.panel-heading {
+				display:block;
+				text-decoration:none;
+
+				&:hover,
+				&:focus,
+				&:active {
+					text-decoration:none;
+				}
+			}
+		}
+	}
+}
+
+// ===================================
+// Download
+// ===================================
+
+.download-item {
+	@include make-sm-column(4);
+	@include make-md-column(3);
+}
+
+// ===================================
+// Image Gallery / Video Gallery
+// ===================================
+
+.image-gallery,
+.video-gallery {
+	.light-gallery-images,
+	.light-gallery-videos {
+		.inner {
+			cursor:pointer;
+			@include make-sm-column(4);
+			@include make-md-column(3);
+		}
+	}
+}
+
+// ===================================
+// Video Gallery
+// ===================================
+
+// ===================================
+// Video Gallery
+// ===================================

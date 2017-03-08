@@ -218,8 +218,8 @@
                             "default_value": "",
                             "tabs": "all",
                             "toolbar": "full",
-                            "media_upload": 1,
-                            "delay": 0
+                            "media_upload": 0,
+                            "delay": 1
                         }
                     ],
                     "min": "",
@@ -397,8 +397,8 @@
                         },
                         {
                             "key": "field_57d919dd9ed05",
-                            "label": "Block Title",
-                            "name": "title",
+                            "label": "Downloads Title",
+                            "name": "downloads_title",
                             "type": "text",
                             "instructions": "",
                             "required": 0,
@@ -413,6 +413,25 @@
                             "prepend": "",
                             "append": "",
                             "maxlength": ""
+                        },
+                        {
+                            "key": "field_58bff0edaa47a",
+                            "label": "Downloads Text",
+                            "name": "downloads_text",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 0,
+                            "delay": 1
                         },
                         {
                             "key": "field_57d919649ed02",
@@ -551,7 +570,7 @@
                             "key": "field_57d949c5d300c",
                             "label": "Image Gallery Text Intro",
                             "name": "image_gallery_text",
-                            "type": "textarea",
+                            "type": "wysiwyg",
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
@@ -561,10 +580,10 @@
                                 "id": ""
                             },
                             "default_value": "",
-                            "placeholder": "",
-                            "maxlength": "",
-                            "rows": "",
-                            "new_lines": "wpautop"
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 0,
+                            "delay": 1
                         },
                         {
                             "key": "field_57d91a0e9ed07",
@@ -642,7 +661,7 @@
                         {
                             "key": "field_57d965496a07a",
                             "label": "Video Text Intro",
-                            "name": "video_title_text",
+                            "name": "video_text",
                             "type": "wysiwyg",
                             "instructions": "",
                             "required": 0,
@@ -655,8 +674,8 @@
                             "default_value": "",
                             "tabs": "all",
                             "toolbar": "full",
-                            "media_upload": 1,
-                            "delay": 0
+                            "media_upload": 0,
+                            "delay": 1
                         },
                         {
                             "key": "field_57d95a1261a1b",
@@ -744,7 +763,7 @@
                                     "label": "Video Url",
                                     "name": "video_url",
                                     "type": "text",
-                                    "instructions": "YouTube link",
+                                    "instructions": "You should only add the code name. IE: <br><br>\r\nhttps:\/\/www.youtube.com\/watch?v=<strong>QOexw4cXfoY<\/strong>",
                                     "required": 0,
                                     "conditional_logic": 0,
                                     "wrapper": {
@@ -817,6 +836,44 @@
                             "prepend": "",
                             "append": "",
                             "maxlength": ""
+                        },
+                        {
+                            "key": "field_58bfef8d331b4",
+                            "label": "Header title",
+                            "name": "accordion_title",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_58bfef0242ae8",
+                            "label": "Header text",
+                            "name": "accordion_text",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 0,
+                            "delay": 1
                         },
                         {
                             "key": "field_57d91a6e9ed0c",
@@ -1080,11 +1137,12 @@
         "excerpt",
         "discussion",
         "comments",
+        "featured_image",
         "categories",
         "tags",
         "send-trackbacks"
     ],
     "active": 1,
     "description": "",
-    "modified": 1488907943
+    "modified": 1488974139
 }

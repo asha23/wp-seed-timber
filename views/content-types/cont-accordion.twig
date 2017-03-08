@@ -2,32 +2,41 @@
 
 {% set count = 0 %}
 {% set con = content_block %}
+{% set accordion_title = con.accordion_title %}
+{% set accordion_text = con.accordion_text %}
 
-<section class="container accordion-container">
+<section class="container accordion">
+
+	{% if accordion_title %}
+		<header>
+			<h2>{{ accordion_title }}</h2>
+		</header>
+	{% endif %}
+
+	{% if accordion_text %}
+		<article class="gallery-text">
+			{{ accordion_text }}
+		</article>
+	{% endif %}
+
 	<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 		<div class="panel panel-default">
 
 			{% for accord in con.accordion %}
+				<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse_{{count}}" class="panel-heading" aria-expanded="true" aria-controls="collapse_{{count}}">
+					<h4 class="accordion-title">{{ accord.title }}</h4>
+				</a>
 
-				<div class="panel-heading" role="tab" id="heading_{{count}}">
-
-					<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse_{{count}}" class="title" aria-expanded="true" aria-controls="collapse_{{count}}">
-						<h4 class="accordion-title">{{ accord.title }} <i class="fa fa-plus"></i></h4>
-					</a>
-
-					<div id="collapse_{{count}}" class="panel-collapse collapse {{ (count == 0) ? 'in' : '' }}"  role="tabpanel" aria-labelledby="heading_{{count}}">
-
-						<div class="panel-body">
-							{{ accord.content }}
-						</div>
-
+				<div id="collapse_{{count}}" class="panel-collapse collapse {{ (count == 0) ? 'in' : '' }}"  role="tabpanel" aria-labelledby="heading_{{count}}">
+					<div class="panel-body">
+						{{ accord.content }}
 					</div>
-
 				</div>
 
 				{% set count = count + 1 %}
 
 			{% endfor %}
+			</div>
 		</div>
 	</div>
 </section>

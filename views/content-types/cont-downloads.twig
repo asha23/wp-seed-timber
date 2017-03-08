@@ -1,13 +1,21 @@
 {# Downloads Logic #}
 
-{% set con = content_block %}
+{% set con 				= content_block %}
+{% set download_title 	= con.downloads_title %}
+{% set download_text 	= con.downloads_text %}
 
 <section class="container download-links">
 
-	{% if con.title %}
+	{% if download_title %}
 		<header>
-			<h1>{{con.title}}</h1>
+			<h2>{{ download_title }}</h2>
 		</header>
+	{% endif %}
+
+	{% if download_text %}
+		<article class="gallery-text">
+			{{ download_text }}
+		</article>
 	{% endif %}
 
 	<div class="row">
@@ -21,18 +29,18 @@
 
 			{% if button_type == "internal" %}
 
-				{% set target = "" %}
-				{% set url = dl.download_element_inturl %}
+				{% set target 	= "" %}
+				{% set url 		= dl.download_element_inturl %}
 
 			{% elseif button_type == "external" %}
 
-				{% set target = "target='_blank'" %}
-				{% set url = dl.download_element_exturl %}
+				{% set target 	= "target='_blank'" %}
+				{% set url 		= dl.download_element_exturl %}
 
 			{% elseif button_type == "file" %}
 
-				{% set target = "target='_blank'" %}
-				{% set url = dl.download_element_fileurl %}
+				{% set target 	= "target='_blank'" %}
+				{% set url 		= dl.download_element_fileurl %}
 
 			{% endif %}
 
@@ -65,7 +73,7 @@
 					{% elseif button_type == "file" %}
 
 						<a href="{{url}}" class="btn btn-default" {{target}}>Download</a>
-						
+
 					{% endif %}
 
 				</aside>

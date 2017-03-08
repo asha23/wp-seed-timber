@@ -1,7 +1,8 @@
 <?php
-
-$pageId = get_the_ID();
-$_SESSION['typeVar'] = $pageId;
+/**
+ * The main front page template file
+ *
+ */
 
 $context = Timber::get_context();
 $context['posts'] = Timber::get_posts();

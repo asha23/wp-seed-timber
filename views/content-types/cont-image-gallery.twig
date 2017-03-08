@@ -1,0 +1,54 @@
+{# Image Gallery Logic #}
+
+{% set con 				= content_block %}
+{% set gallery_title 	= con.block_title %}
+{% set gallery 			= con.image_gallery %}
+{% set gallery_text 	= con.image_gallery_text %}
+
+<section class="container image-gallery">
+	{% if gallery_title %}
+		<header>
+			<h2>{{ gallery_title }}</h2>
+		</header>
+	{% endif %}
+
+	{% if gallery_text %}
+		<article class="gallery-text">
+			{{ gallery_text }}
+		</article>
+	{% endif %}
+
+	<div class="light-gallery-images row">
+
+		{% for gal in gallery %}
+			{% set img_url 		= gal.url %}
+			{% set img_caption 	= gal.caption %}
+			{% set img_title 	= gal.title %}
+			{% set img_desc 	= gal.description %}
+
+			<div class="inner">
+
+				<figure class="panel panel-default gallery-item" data-src="{{TimberImage(img_url).src}}">
+
+					<div class="panel-heading ">
+						<div class="">
+							<h4><i class="fa fa-expand"></i></h4>
+						</div>
+					</div>
+
+					<img src="{{TimberImage(img_url).src}}" class="img-respond" alt="{{ img_title }}">
+
+					<div class="panel-body inner-overlay">
+						<div class="overlay-text">
+							<h4>{{ img_title }}</h4>
+							<p>{{ img_desc }}</p>
+						</div>
+					</div>
+
+				</figure>
+			</div>
+
+		{% endfor %}
+
+	</div>
+</section>

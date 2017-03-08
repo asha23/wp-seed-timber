@@ -22,7 +22,7 @@ function seed_main_nav() {
 	    	'walker' => new wp_bootstrap_navwalker()        // for bootstrap nav
 		));
 	};
-};
+}
 
 // the footer menu (should you choose to use one)
 function seed_footer_links() {
@@ -40,4 +40,17 @@ function seed_footer_links() {
 		'depth' => 0,                                   // limit the depth of the nav
     	'fallback_cb' => 'seed_footer_links_fallback', 	// fallback function
 	));
-};
+}
+
+// this is the fallback for header menu
+function seed_main_nav_fallback() {
+	wp_page_menu( array(
+		'show_home' => true,
+    	'menu_class' => 'nav top-nav clearfix',      	// adding custom nav class
+		'include'     => '',
+		'exclude'     => '',
+		'echo'        => true,
+        'link_before' => '',                            // before each link
+        'link_after' => ''                             	// after each link
+	) );
+}
