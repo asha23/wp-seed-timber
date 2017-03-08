@@ -11,4 +11,4 @@ vendor-libs
 build/manifest.json
 build/js
 build/css
-package.bak.json
+yarn.lock
