@@ -1,8 +1,8 @@
 {# Downloads Logic #}
 
-{% set con 				= content_block %}
-{% set download_title 	= con.downloads_title %}
-{% set download_text 	= con.downloads_text %}
+{% set con = content_block %}
+{% set download_title = con.downloads_title %}
+{% set download_text = con.downloads_text %}
 
 <section class="container download-links">
 
@@ -22,25 +22,25 @@
 
 		{% for dl in con.downloads %}
 
-			{% set button_type 		= dl.download_element_button_type %}
-			{% set download_image 	= dl.download_image %}
-			{% set download_text 	= dl.download_text %}
-			{% set link_title 		= dl.download_element_link_title %}
+			{% set button_type = dl.download_element_button_type %}
+			{% set download_image = dl.download_image %}
+			{% set download_text = dl.download_text %}
+			{% set link_title = dl.download_element_link_title %}
 
 			{% if button_type == "internal" %}
 
-				{% set target 	= "" %}
-				{% set url 		= dl.download_element_inturl %}
+				{% set target = "" %}
+				{% set url = dl.download_element_inturl %}
 
 			{% elseif button_type == "external" %}
 
-				{% set target 	= "target='_blank'" %}
-				{% set url 		= dl.download_element_exturl %}
+				{% set target = "target='_blank'" %}
+				{% set url = dl.download_element_exturl %}
 
 			{% elseif button_type == "file" %}
 
-				{% set target 	= "target='_blank'" %}
-				{% set url 		= dl.download_element_fileurl %}
+				{% set target = "target='_blank'" %}
+				{% set url = dl.download_element_fileurl %}
 
 			{% endif %}
 

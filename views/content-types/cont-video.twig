@@ -1,9 +1,9 @@
 {# Video Gallery Logic #}
 
-{% set con 			= content_block %}
-{% set video_title 	= con.block_title %}
-{% set videos 		= con.videos %}
-{% set video_text 	= con.video_text %}
+{% set con = content_block %}
+{% set video_title = con.block_title %}
+{% set videos = con.videos %}
+{% set video_text = con.video_text %}
 
 <section class="container video-gallery">
 	{% if video_title %}
@@ -22,10 +22,10 @@
 
 		{% for vid in videos %}
 
-			{% set vid_poster 	= vid.video_poster %}
-			{% set vid_title 	= vid.video_title %}
-			{% set vid_desc 	= vid.video_text %}
-			{% set vid_url 		= vid.video_url %}
+			{% set vid_poster = vid.video_poster %}
+			{% set vid_title = vid.video_title %}
+			{% set vid_desc = vid.video_text %}
+			{% set vid_url = vid.video_url %}
 
 			<div class="inner">
 
