@@ -8,7 +8,7 @@ sassdoc/*
 library/js/vendor-libs/*
 library/js/vendor-libs
 vendor-libs
-yarn.lock
 build/manifest.json
 build/js
 build/css
+package.bak.json
