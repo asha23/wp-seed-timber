@@ -1,6 +1,6 @@
 {
     "key": "group_57d911c5d0142",
-    "title": "(Global) Content Types",
+    "title": "(MODULES) Content Types",
     "fields": [
         {
             "key": "field_57d911d19fc60",
@@ -1143,6 +1143,6 @@
         "send-trackbacks"
     ],
     "active": 1,
-    "description": "",
-    "modified": 1488974139
+    "description": "These are the main page based content blocks",
+    "modified": 1488976654
 }

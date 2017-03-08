@@ -1,7 +1,27 @@
 {
     "key": "group_5666df741960f",
     "title": "(OPTIONS) Header",
-    "fields": [],
+    "fields": [
+        {
+            "key": "field_589da7a7948d1",
+            "label": "Google Analytics",
+            "name": "google_analytics",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
+        }
+    ],
     "location": [
         [
             {
@@ -19,5 +39,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "THEME SPECIFIC - Header options",
-    "modified": 1449582484
+    "modified": 1488976578
 }

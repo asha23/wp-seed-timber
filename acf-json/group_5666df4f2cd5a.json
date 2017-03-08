@@ -1,7 +1,7 @@
 {
     "key": "group_5666df4f2cd5a",
     "title": "(OPTIONS) Footer",
-    "fields": [],
+    "fields": false,
     "location": [
         [
             {
@@ -19,5 +19,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "THEME SPECIFIC - Footer options",
-    "modified": 1449582500
+    "modified": 1488976565
 }
