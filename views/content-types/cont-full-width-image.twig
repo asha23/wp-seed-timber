@@ -1,28 +1,56 @@
+{# Full width image with parallax option #}
 
 {% set con = content_block %}
+{% set parallax = con.parallax_this %}
+{% set parallax_speed = con.parallax_speed %}
+{% set overlay = con.turn_on_overlay %}
+{% set title = con.title %}
+{% set text = con.text %}
+{% set image = con.image %}
 
-{% if(con.parallax) %}
+{% if(parallax) %}
+	<!-- This uses parallax.js http://pixelcog.github.io/parallax.js/ -->
+	<section class="container-fluid full-width-image-parallax img-respond"
+		data-parallax="scroll"
+		data-image-src="{{ TimberImage(image).src }}"
+		data-speed="{{ parallax_speed }}"
+		data-bleed="1"
+		style="">
 
-	<section class="container-fluid full-width-image img-respond" data-parallax="scroll" data-image-src="{{ TimberImage(con.image).src }}" style="background-size: 100% auto;"></section>
+		{% if overlay %}
 
+			<article class="overlay-text">
+
+				<header>
+					<h1>{{ title }}</h1>
+				</header>
+
+				<aside class="text">
+					{{ text }}
+				</aside>
+
+			</article>
+
+		{% endif %}
+	</section>
 {% else %}
 
 	<section class="container-fluid full-width-image">
 
 		<figure class="image">
-			<img src="{{ TimberImage(con.image).src }}" alt="{{ TimberImage(con.image).alt }}" class="img-respond">
+			<img src="{{ TimberImage(image).src }}" alt="{{ TimberImage(image).alt }}" class="img-respond">
 		</figure>
 
-		{% if con.turn_on_overlay %}
+		{% if overlay %}
 
 			<article class="overlay-text">
 
 				<header>
-					<h1>{{ con.title }}</h1>
+					<h1>{{ title }}</h1>
 				</header>
 
 				<aside class="text">
-					{{ con.text }}
+					{{ text }}
 				</aside>
 
 			</article>

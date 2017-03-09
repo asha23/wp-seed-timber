@@ -35,11 +35,12 @@ var jsFileList = [
 	config.bowerPath  		+ 'respond/dest/respond.src.js',
 	config.bowerPath  		+ 'respond/dest/respond.matchmedia.addListener.src.js',
     config.bowerPath 		+ 'bootstrap-sass/assets/javascripts/bootstrap.js',
+	config.bowerPath        + 'matchHeight/dist/jquery.matchHeight.js',
+	config.bowerPath        + 'parallax.js/parallax.js',
 	config.jsPathVendor  	+ 'lightgallery/lightgallery.js',
 	config.jsPathVendor  	+ 'lg-thumbnail/lg-thumbnail.js',
 	config.jsPathVendor  	+ 'lg-video/lg-video.js',
 	config.jsPathVendor  	+ 'lg-fullscreen/lg-fullscreen.js',
-	config.bowerPath        + 'matchHeight/dist/jquery.matchHeight.js',
 	config.jsPath 			+ '/scripts.js'
 ];
 

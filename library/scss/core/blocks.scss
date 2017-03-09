@@ -50,7 +50,8 @@
 // Full Width image
 // ===================================
 
-.full-width-image {
+.full-width-image,
+.full-width-image-parallax {
 	position:relative;
 	padding:0;
 
@@ -70,6 +71,15 @@
 			padding:10px 0;
 			clear:both;
 		}
+	}
+}
+
+.full-width-image-parallax {
+	background-size: 100% auto;
+	height:500px;
+
+	.overlay-text {
+		background:rgba(255,255,255,0.3);
 	}
 }
 

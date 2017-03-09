@@ -127,7 +127,7 @@ This is where you can edit your ```styles.scss``` file and also ```scripts.js```
 /views
 -----
 
-This is where all the .twig files live
+This is where all the .twig files live. These are split out into a sensible folder structure.
 
 /bower
 ------
@@ -143,16 +143,12 @@ We pull the scripts into the ```js/vendor-libs``` folder and then compile them i
 
 Generally speaking, these paths are the only things you should need to touch inside this file, but if you know a better way of doing some of the tasks inside here, then feel free to adjust it to suit your working methods - This Gulpfile is a work in progress.
 
-
-
 Notes on using Bower for dependency management
 ==============================================
 
 Where possible, you should use Bower for any JavaScript or css modules you want to add to this theme. A lot of commonly used libraries and frameworks are now part of the Bower ecosystem. This will make sure that all your dependencies remain intact and that you are always using the most up-to-date version of the library.
 
 If you haven't been to a project in a while it's worth running a ```bower update``` periodically.
-
-
 
 General notes
 ==============================================
@@ -167,4 +163,6 @@ If you can see anything you'd really like added to this, open an issue.
 
 #### ToDo
 
-Need to finish off the Twig integrations.
+Add a carousel option
+Add a container image
+Add a custom table field

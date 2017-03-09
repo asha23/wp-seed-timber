@@ -43,6 +43,7 @@
     "lg-zoom": "^1.0.4",
     "lg-hash": "^1.0.1",
     "lg-share": "^1.0.2",
+    "parallax.js": "^1.4.2",
     "jquery-lazyload-any": "^0.3.0"
   }
 }

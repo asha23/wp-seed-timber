@@ -504,6 +504,35 @@
                             "ui_off_text": ""
                         },
                         {
+                            "key": "field_58c171c8bd022",
+                            "label": "Parallax Speed",
+                            "name": "parallax_speed",
+                            "type": "number",
+                            "instructions": "0 is minimum 1 is maximum (IE 0.7)",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_589d96de580a0",
+                                        "operator": "==",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "0.7",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "min": 0,
+                            "max": 1,
+                            "step": "0.1"
+                        },
+                        {
                             "key": "field_589d872755a6e",
                             "label": "Turn On Overlay",
                             "name": "turn_on_overlay",
@@ -1420,5 +1449,5 @@
     ],
     "active": 1,
     "description": "These are the main page based content blocks",
-    "modified": 1489071233
+    "modified": 1489072744
 }
