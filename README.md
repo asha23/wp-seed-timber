@@ -184,6 +184,6 @@ If you can see anything you'd really like added to this, open an issue.
 
 #### ToDo
 
-Add a carousel option
-Add a container image
-Add a custom table field
+Add a carousel option   
+Add a container image   
+Add a custom table field   
