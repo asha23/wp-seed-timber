@@ -8,7 +8,6 @@
 
 require_once( 'includes/core.php' ); // This is all the core base functions in one place.
 require_once( 'includes/option-pages.php' ); // Add theme options and general options pages.
-require_once( 'includes/navwalker.php' ); // Add a navigation walker for the main menu.
 require_once( 'includes/scripts-styles.php' ); // Enqueue scripts and styles.
 require_once( 'includes/menus.php' ); // Add Menu functions.
 require_once( 'includes/taxonomy-rewrite.php' ); // Add Menu functions.
