@@ -1,0 +1,11 @@
+
+<section class="container">
+	<div class="row">
+		{% for post in examples %}
+			<header>
+				<h1>{{post.title}}</h1>
+			</header>
+			{{post.excerpt}}
+		{% endfor %}
+	</div>
+</section>

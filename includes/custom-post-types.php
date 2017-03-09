@@ -1,19 +1,16 @@
 <?php
 
 // Use this file to create custom post types.
-
-/*
-
-// Example post type
+// Example post type - Change this or delete it
 
 function example_post_type() {
 
     $labels = array(
-        'name'                  => _x( 'Galleries', 'Post Type General Name', 'text_domain' ),
+        'name'                  => _x( 'Example', 'Post Type General Name', 'text_domain' ),
         'singular_name'         => _x( 'Example', 'Post Type Singular Name', 'text_domain' ),
-        'name_admin_bar'        => __( 'Galleries', 'text_domain' ),
-        'parent_item_colon'     => __( 'Parent Item:', 'text_domain' ),
-        'all_items'             => __( 'All Galleries', 'text_domain' ),
+        'name_admin_bar'        => __( 'Example', 'text_domain' ),
+        'parent_item_colon'     => __( 'Parent Example:', 'text_domain' ),
+        'all_items'             => __( 'All Examples', 'text_domain' ),
         'add_new_item'          => __( 'Add New Example', 'text_domain' ),
         'add_new'               => __( 'Add New', 'text_domain' ),
         'new_item'              => __( 'New Item', 'text_domain' ),
@@ -28,10 +25,10 @@ function example_post_type() {
         'filter_items_list'     => __( 'Filter items list', 'text_domain' ),
     );
     $args = array(
-        'label'                 => __( 'Galleries', 'text_domain' ),
-        'description'           => __( 'Galleries Custom Post', 'text_domain' ),
+        'label'                 => __( 'Example', 'text_domain' ),
+        'description'           => __( 'Example Custom Post', 'text_domain' ),
         'labels'                => $labels,
-        'supports'              => array( 'title', 'editor', 'revisions'),
+        'supports'              => array( 'title', 'editor', 'revisions', 'thumbnail', 'excerpt', 'page-attributes'),
         'taxonomies'            => array( ),
         'hierarchical'          => false,
         'public'                => true,
@@ -45,9 +42,9 @@ function example_post_type() {
         'has_archive'           => false,
         'exclude_from_search'   => false,
         'publicly_queryable'    => true,
-        'capability_type'       => 'page',
+        'capability_type'       => 'page'
     );
-    register_post_type( 'example', $args );
+    register_post_type( 'examples', $args );
 }
 add_action( 'init', 'example_post_type', 0 );
 
@@ -70,13 +67,11 @@ function example_taxonomy() {
 
 	$args = array(
 		'labels' => $labels,
-		'hierarchical' => true,
+		'hierarchical'  => true,
 		'public'        => true,
 		'has_archive'   => true,
 	);
 
-	register_taxonomy( 'example_category', 'example', $args );
+	register_taxonomy( 'example_category', 'examples', $args );
 }
 add_action( 'init', 'example_taxonomy', 0 );
-
-*/

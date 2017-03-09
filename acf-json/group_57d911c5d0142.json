@@ -1310,6 +1310,13 @@
                 "operator": "==",
                 "value": "page-content-blocks.php"
             }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-examples.php"
+            }
         ]
     ],
     "menu_order": 0,
@@ -1327,5 +1334,5 @@
     ],
     "active": 1,
     "description": "These are the main page based content blocks",
-    "modified": 1488989709
+    "modified": 1489054022
 }
