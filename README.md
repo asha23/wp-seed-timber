@@ -8,8 +8,6 @@ This is meant to be a very basic starting point for theme development. You'll ne
 
 You should have the Timber plugin and Advanced Custom Fields Pro installed, as these are a requirement. Alternatively simply build your site using the following tool.
 
-You'll need an ACF Pro Serial.
-
 https://github.com/asha23/arlo-timber
 
 ## What comes with this theme?
