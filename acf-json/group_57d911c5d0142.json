@@ -259,7 +259,7 @@
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
-                                "width": "",
+                                "width": "50",
                                 "class": "",
                                 "id": ""
                             },
@@ -268,6 +268,31 @@
                             "ui": 0,
                             "ui_on_text": "",
                             "ui_off_text": ""
+                        },
+                        {
+                            "key": "field_58c12dd94129e",
+                            "label": "Text Alignment",
+                            "name": "text_alignment",
+                            "type": "radio",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "text-center": "Center",
+                                "text-left": "Left",
+                                "text-right": "Right"
+                            },
+                            "allow_null": 0,
+                            "other_choice": 0,
+                            "save_other_choice": 0,
+                            "default_value": "left",
+                            "layout": "horizontal",
+                            "return_format": "value"
                         },
                         {
                             "key": "field_58c02a30f2934",
@@ -1263,5 +1288,5 @@
     ],
     "active": 1,
     "description": "These are the main page based content blocks",
-    "modified": 1489054848
+    "modified": 1489055329
 }

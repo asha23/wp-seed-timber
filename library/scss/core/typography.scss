@@ -1,5 +1,31 @@
 ////
 /// typography.scss
 /// Mixins
-/// @author Your Name
+/// @author Ash Whiting
 ////
+
+// Text alignment
+
+.text-left {
+	text-align:left;
+
+	@media(max-width:$screen-xs-max) {
+		text-align:center;
+	}
+}
+
+.text-right {
+	text-align:right;
+
+	@media(max-width:$screen-xs-max) {
+		text-align:center;
+	}
+}
+
+.text-center {
+	text-align:center;
+
+	@media(max-width:$screen-xs-max) {
+		text-align:center;
+	}
+}
