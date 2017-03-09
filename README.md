@@ -24,6 +24,9 @@ There are a number of pre-built Custom Fields added to this theme. You can enabl
 * Image Gallery (With LightGallery)
 * Video Gallery (With LightGallery)
 * Text Block
+* Padding/Horizontal Line
+* Teasers
+* Headers
 
 More will be added over time.
 
@@ -99,7 +102,30 @@ gulp
 
 on it's own to do the tasks once.
 
-wp-seed Folder Structure
+Setting up the custom fields
+================
+
+Assuming you have Advanced Custom Fields Pro installed (Which is a requirement) - All the fields are ready to go in this theme. However, you will need to sync them for them to fall into place.
+
+Templates
+================
+
+There are a couple of templates for use with the Flexible Content modules. In your page, you should use the " Page with content blocks" template. This will set up the fields for use in this page
+
+There is an example custom post type, called, "example" - You'll see this in the menu. You can set up further post types by using the page-examples.php file and following it's logic.
+
+In the includes folder, you can add further custom post types by opening custom-post-types.php
+
+Sample Data
+================
+
+This is found in the /example_data folder.
+
+If you like, you can use the included sample data and the zipped copy of the uploads folder. You will need to extract the uploads folder to your content folder.
+
+Use the Wordpress Importer to import the sample data into your theme. This will create a style guide for you to refer to.
+
+wp-seed-timber Folder Structure
 ================
 
 Inside the theme, you will find the following structure. This assumes you know a bit about WordPress theming techniques. It's essentially a bare bones sensible structure.
