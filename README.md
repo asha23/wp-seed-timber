@@ -6,7 +6,7 @@ This is meant to be a very basic starting point for theme development. You'll ne
 
 ## What do I need to make this work?
 
-You should have the Timber plugin and Advanced Custom Fields Pro installed, as these are a requirement. Alternatively simply build your site using the following tool.
+You should have the Timber plugin and Advanced Custom Fields Pro installed, as these are a requirement. You should build your site using the following tool. This will put into place a few useful plugins.
 
 https://github.com/asha23/arlo-timber
 
