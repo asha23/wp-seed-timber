@@ -107,6 +107,8 @@ Setting up the custom fields
 
 Assuming you have Advanced Custom Fields Pro installed (Which is a requirement) - All the fields are ready to go in this theme. However, you will need to sync them for them to fall into place.
 
+In your field groups, you will see Sync Available.
+
 Templates
 ================
 
@@ -124,6 +126,8 @@ This is found in the /example_data folder.
 If you like, you can use the included sample data and the zipped copy of the uploads folder. You will need to extract the uploads folder to your content folder.
 
 Use the Wordpress Importer to import the sample data into your theme. This will create a style guide for you to refer to.
+
+Once you have imported the data, you should delete this folder.
 
 wp-seed-timber Folder Structure
 ================
