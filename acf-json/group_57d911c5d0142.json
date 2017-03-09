@@ -69,10 +69,10 @@
                             "name": "block_type",
                             "type": "select",
                             "instructions": "Please select the block type. This can be a 2 column split (with or without images) or full width plain text block.",
-                            "required": "",
-                            "conditional_logic": "",
+                            "required": 0,
+                            "conditional_logic": 0,
                             "wrapper": {
-                                "width": "",
+                                "width": "50",
                                 "class": "",
                                 "id": ""
                             },
@@ -81,16 +81,16 @@
                                 "split": "Split"
                             },
                             "default_value": [],
-                            "allow_null": "",
-                            "multiple": "",
-                            "ui": "",
-                            "ajax": "",
-                            "return_format": "",
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "return_format": "value",
                             "placeholder": ""
                         },
                         {
-                            "key": "field_57d9157263852",
-                            "label": "Split Left",
+                            "key": "field_58c1637b0c202",
+                            "label": "Split",
                             "name": "",
                             "type": "tab",
                             "instructions": "",
@@ -113,10 +113,105 @@
                             "endpoint": 0
                         },
                         {
-                            "key": "field_57d916cbd4adb",
-                            "label": "Left Block",
-                            "name": "left",
-                            "type": "clone",
+                            "key": "field_58c16239194de",
+                            "label": "Image On",
+                            "name": "image_on",
+                            "type": "select",
+                            "instructions": "Please select which side you would like the image to appear.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "left": "Left",
+                                "right": "Right"
+                            },
+                            "default_value": [],
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "return_format": "value",
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_58c1645e3cfb7",
+                            "label": "Left Column Width",
+                            "name": "left_column_width",
+                            "type": "select",
+                            "instructions": "Left and right columns should be multiples of 12",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "3": "3",
+                                "4": "4",
+                                "5": "5",
+                                "6": "6",
+                                "7": "7",
+                                "8": "8",
+                                "9": "9",
+                                "10": "10",
+                                "11": "11",
+                                "12": "12 (full width)"
+                            },
+                            "default_value": [
+                                6
+                            ],
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "return_format": "value",
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_58c164b93cfb8",
+                            "label": "Right Column Width",
+                            "name": "right_column_width",
+                            "type": "select",
+                            "instructions": "Left and right columns should be multiples of 12",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "3": "3",
+                                "4": "4",
+                                "5": "5",
+                                "6": "6",
+                                "7": "7",
+                                "8": "8",
+                                "9": "9",
+                                "10": "10",
+                                "11": "11",
+                                "12": "12 (full width)"
+                            },
+                            "default_value": [
+                                6
+                            ],
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "return_format": "value",
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_58c1627b194df",
+                            "label": "Image",
+                            "name": "split_image",
+                            "type": "image",
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
@@ -125,43 +220,22 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "clone": [
-                                "group_57d915dd62a9c"
-                            ],
-                            "display": "group",
-                            "layout": "block",
-                            "prefix_label": 0,
-                            "prefix_name": 1
+                            "return_format": "array",
+                            "preview_size": "medium",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": ""
                         },
                         {
-                            "key": "field_57d915c763855",
-                            "label": "Split Right",
-                            "name": "",
-                            "type": "tab",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": [
-                                [
-                                    {
-                                        "field": "field_57d9153063851",
-                                        "operator": "==",
-                                        "value": "split"
-                                    }
-                                ]
-                            ],
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "placement": "top",
-                            "endpoint": 0
-                        },
-                        {
-                            "key": "field_57d916f7d4adc",
-                            "label": "Right Block",
-                            "name": "right",
-                            "type": "clone",
+                            "key": "field_58c16283194e0",
+                            "label": "Text",
+                            "name": "split_text",
+                            "type": "wysiwyg",
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
@@ -170,13 +244,11 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "clone": [
-                                "group_57d915dd62a9c"
-                            ],
-                            "display": "group",
-                            "layout": "block",
-                            "prefix_label": 0,
-                            "prefix_name": 1
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 0,
+                            "delay": 1
                         },
                         {
                             "key": "field_57d9170dd4add",
@@ -260,6 +332,25 @@
                             "conditional_logic": 0,
                             "wrapper": {
                                 "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "",
+                            "default_value": 1,
+                            "ui": 0,
+                            "ui_on_text": "",
+                            "ui_off_text": ""
+                        },
+                        {
+                            "key": "field_58c16c6f9d0f9",
+                            "label": "Full Width",
+                            "name": "full_width",
+                            "type": "true_false",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
                                 "class": "",
                                 "id": ""
                             },
@@ -1084,7 +1175,7 @@
                 {
                     "key": "57d914cb6384f",
                     "name": "content_padding",
-                    "label": "Content - Padding",
+                    "label": "Content - Padding\/Horizontal Rule",
                     "display": "block",
                     "sub_fields": [
                         {
@@ -1101,6 +1192,7 @@
                                 "id": ""
                             },
                             "choices": {
+                                "0": "No Padding",
                                 "10px": "10px",
                                 "20px": "20px",
                                 "30px": "30px",
@@ -1121,6 +1213,46 @@
                             "ajax": 0,
                             "return_format": "value",
                             "placeholder": ""
+                        },
+                        {
+                            "key": "field_58c16abe9fc19",
+                            "label": "Add a horizontal line",
+                            "name": "hr",
+                            "type": "true_false",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "",
+                            "default_value": 0,
+                            "ui": 0,
+                            "ui_on_text": "",
+                            "ui_off_text": ""
+                        },
+                        {
+                            "key": "field_58c16bf1bb979",
+                            "label": "Ruler Height",
+                            "name": "ruler_height",
+                            "type": "number",
+                            "instructions": "In pixels",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": 1,
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "min": "",
+                            "max": "",
+                            "step": ""
                         }
                     ],
                     "min": "",
@@ -1288,5 +1420,5 @@
     ],
     "active": 1,
     "description": "These are the main page based content blocks",
-    "modified": 1489055329
+    "modified": 1489071233
 }

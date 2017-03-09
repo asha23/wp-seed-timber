@@ -2,5 +2,11 @@
 
 {% set con = content_block %}
 {% set padding = con.padding %}
+{% set hr = con.hr %}
+{% set ruler_height = con.ruler_height %}
 
-<section class="container-fluid" style="margin-top:{{ con.padding }}"></section>
+<section class="container" style="margin-top:{{ con.padding }};margin-bottom:{{ con.padding }}">
+	{% if hr %}
+		<div class="hr" style="height:{{ ruler_height }}px;"></div>
+	{% endif %}
+</section>

@@ -6,6 +6,15 @@
 {% set title_text = con.title_text %}
 {% set title_margin = con.add_margins %}
 {% set text_align = con.text_alignment %}
+{% set full_width = con.full_width %}
+
+{% if full_width == 1 %}
+	{% set container_class = "container_fluid" %}
+	{% set inner_container = "container" %}
+{% else %}
+	{% set container_class = "container" %}
+	{% set inner_container = "" %}
+{% endif %}
 
 {% if title_margin == 1 %}
 	{% set margin_class = "header-margins" %}
@@ -14,8 +23,8 @@
 {% endif %}
 
 {% if toggle == "1" %}
-	<section class="container-fluid custom-header {{ margin_class }}">
-		<div class="container {{text_alignment}}">
+	<section class="{{ container_class }} custom-header {{ margin_class }}">
+		<div class="{{ inner_container }} {{text_align}}">
 			{% if title_type == "auto" %}
 				<h2>{{ post.post_title }}</h2>
 			{% else %}
