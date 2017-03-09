@@ -29,7 +29,7 @@
 	<title>Base Expert</title>
 	<link>http://base-expert.local</link>
 	<description></description>
-	<pubDate>Thu, 09 Mar 2017 16:00:08 +0000</pubDate>
+	<pubDate>Thu, 09 Mar 2017 16:28:59 +0000</pubDate>
 	<language>en-GB</language>
 	<wp:wxr_version>1.2</wp:wxr_version>
 	<wp:base_site_url>http://base-expert.local</wp:base_site_url>
@@ -1526,41 +1526,6 @@ https://www.youtube.com/watch?v=<strong>QOexw4cXfoY</strong>";s:8:"required";i:0
 		</wp:postmeta>
 	</item>
 	<item>
-		<title>IMG_0043-White-departure-coach-day-1</title>
-		<link>http://base-expert.local/style-guide/img_0043-white-departure-coach-day-1/</link>
-		<pubDate>Tue, 07 Mar 2017 16:03:20 +0000</pubDate>
-		<dc:creator><![CDATA[awhiting]]></dc:creator>
-		<guid isPermaLink="false">http://base-expert.local/content/uploads/2017/02/IMG_0043-White-departure-coach-day-1.jpg</guid>
-		<description></description>
-		<content:encoded><![CDATA[]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>98</wp:post_id>
-		<wp:post_date><![CDATA[2017-03-07 16:03:20]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2017-03-07 16:03:20]]></wp:post_date_gmt>
-		<wp:comment_status><![CDATA[open]]></wp:comment_status>
-		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[img_0043-white-departure-coach-day-1]]></wp:post_name>
-		<wp:status><![CDATA[inherit]]></wp:status>
-		<wp:post_parent>4</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[attachment]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<wp:attachment_url><![CDATA[http://base-expert.local/content/uploads/2017/02/IMG_0043-White-departure-coach-day-1.jpg]]></wp:attachment_url>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
-			<wp:meta_value><![CDATA[2017/02/IMG_0043-White-departure-coach-day-1.jpg]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_attachment_metadata]]></wp:meta_key>
-			<wp:meta_value><![CDATA[a:6:{s:5:"width";i:1170;s:6:"height";i:710;s:14:"hwstring_small";s:23:"height='78' width='128'";s:4:"file";s:48:"2017/02/IMG_0043-White-departure-coach-day-1.jpg";s:5:"sizes";a:7:{s:9:"thumbnail";a:4:{s:4:"file";s:48:"IMG_0043-White-departure-coach-day-1-150x150.jpg";s:5:"width";i:150;s:6:"height";i:150;s:9:"mime-type";s:10:"image/jpeg";}s:6:"medium";a:4:{s:4:"file";s:48:"IMG_0043-White-departure-coach-day-1-300x182.jpg";s:5:"width";i:300;s:6:"height";i:182;s:9:"mime-type";s:10:"image/jpeg";}s:12:"medium_large";a:4:{s:4:"file";s:48:"IMG_0043-White-departure-coach-day-1-768x466.jpg";s:5:"width";i:768;s:6:"height";i:466;s:9:"mime-type";s:10:"image/jpeg";}s:5:"large";a:4:{s:4:"file";s:49:"IMG_0043-White-departure-coach-day-1-1024x621.jpg";s:5:"width";i:1024;s:6:"height";i:621;s:9:"mime-type";s:10:"image/jpeg";}s:11:"teaser-half";a:4:{s:4:"file";s:48:"IMG_0043-White-departure-coach-day-1-524x270.jpg";s:5:"width";i:524;s:6:"height";i:270;s:9:"mime-type";s:10:"image/jpeg";}s:11:"teaser-full";a:4:{s:4:"file";s:49:"IMG_0043-White-departure-coach-day-1-1100x400.jpg";s:5:"width";i:1100;s:6:"height";i:400;s:9:"mime-type";s:10:"image/jpeg";}s:11:"teaser-main";a:4:{s:4:"file";s:48:"IMG_0043-White-departure-coach-day-1-400x400.jpg";s:5:"width";i:400;s:6:"height";i:400;s:9:"mime-type";s:10:"image/jpeg";}}s:10:"image_meta";a:12:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}}}]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_attachment_image_alt]]></wp:meta_key>
-			<wp:meta_value><![CDATA[Alts]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
 		<title>1200x300</title>
 		<link>http://base-expert.local/style-guide/1200x300/</link>
 		<pubDate>Tue, 07 Mar 2017 16:21:34 +0000</pubDate>
@@ -1655,6 +1620,37 @@ https://www.youtube.com/watch?v=<strong>QOexw4cXfoY</strong>";s:8:"required";i:0
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_wp_attachment_metadata]]></wp:meta_key>
 			<wp:meta_value><![CDATA[a:6:{s:5:"width";i:300;s:6:"height";i:300;s:14:"hwstring_small";s:22:"height='96' width='96'";s:4:"file";s:21:"2017/02/300x300-1.png";s:5:"sizes";a:3:{s:9:"thumbnail";a:4:{s:4:"file";s:21:"300x300-1-150x150.png";s:5:"width";i:150;s:6:"height";i:150;s:9:"mime-type";s:9:"image/png";}s:6:"medium";a:4:{s:4:"file";s:21:"300x300-1-300x300.png";s:5:"width";i:300;s:6:"height";i:300;s:9:"mime-type";s:9:"image/png";}s:11:"teaser-half";a:4:{s:4:"file";s:21:"300x300-1-300x270.png";s:5:"width";i:300;s:6:"height";i:270;s:9:"mime-type";s:9:"image/png";}}s:10:"image_meta";a:12:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}}}]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>300x300-2</title>
+		<link>http://base-expert.local/style-guide/300x300-2/</link>
+		<pubDate>Wed, 08 Mar 2017 10:09:26 +0000</pubDate>
+		<dc:creator><![CDATA[awhiting]]></dc:creator>
+		<guid isPermaLink="false">http://base-expert.local/content/uploads/2017/02/300x300-2.png</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>110</wp:post_id>
+		<wp:post_date><![CDATA[2017-03-08 10:09:26]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2017-03-08 10:09:26]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[open]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[300x300-2]]></wp:post_name>
+		<wp:status><![CDATA[inherit]]></wp:status>
+		<wp:post_parent>4</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[attachment]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:attachment_url><![CDATA[http://base-expert.local/content/uploads/2017/02/300x300-2.png]]></wp:attachment_url>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
+			<wp:meta_value><![CDATA[2017/02/300x300-2.png]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_attachment_metadata]]></wp:meta_key>
+			<wp:meta_value><![CDATA[a:6:{s:5:"width";i:300;s:6:"height";i:300;s:14:"hwstring_small";s:22:"height='96' width='96'";s:4:"file";s:21:"2017/02/300x300-2.png";s:5:"sizes";a:3:{s:9:"thumbnail";a:4:{s:4:"file";s:21:"300x300-2-150x150.png";s:5:"width";i:150;s:6:"height";i:150;s:9:"mime-type";s:9:"image/png";}s:6:"medium";a:4:{s:4:"file";s:21:"300x300-2-300x300.png";s:5:"width";i:300;s:6:"height";i:300;s:9:"mime-type";s:9:"image/png";}s:11:"teaser-half";a:4:{s:4:"file";s:21:"300x300-2-300x270.png";s:5:"width";i:300;s:6:"height";i:270;s:9:"mime-type";s:9:"image/png";}}s:10:"image_meta";a:12:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}}}]]></wp:meta_value>
 		</wp:postmeta>
 	</item>
 	<item>
@@ -2546,7 +2542,7 @@ Ad suas scripserit eos, ex ius nonumy deleniti similique, ius id elaboraret adve
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[global_content_types_3_split_image]]></wp:meta_key>
-			<wp:meta_value><![CDATA[98]]></wp:meta_value>
+			<wp:meta_value><![CDATA[139]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_global_content_types_3_split_image]]></wp:meta_key>
@@ -2628,7 +2624,7 @@ Nisl viderer disputationi est ad, pro cu dictas omnesque voluptaria. Ullum negle
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[global_content_types_5_split_image]]></wp:meta_key>
-			<wp:meta_value><![CDATA[98]]></wp:meta_value>
+			<wp:meta_value><![CDATA[139]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_global_content_types_5_split_image]]></wp:meta_key>
@@ -3616,37 +3612,6 @@ Nisl viderer disputationi est ad, pro cu dictas omnesque voluptaria. Ullum negle
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key>
 			<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
-		<title>300x300-2</title>
-		<link>http://base-expert.local/style-guide/300x300-2/</link>
-		<pubDate>Wed, 08 Mar 2017 10:09:26 +0000</pubDate>
-		<dc:creator><![CDATA[awhiting]]></dc:creator>
-		<guid isPermaLink="false">http://base-expert.local/content/uploads/2017/02/300x300-2.png</guid>
-		<description></description>
-		<content:encoded><![CDATA[]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>110</wp:post_id>
-		<wp:post_date><![CDATA[2017-03-08 10:09:26]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2017-03-08 10:09:26]]></wp:post_date_gmt>
-		<wp:comment_status><![CDATA[open]]></wp:comment_status>
-		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[300x300-2]]></wp:post_name>
-		<wp:status><![CDATA[inherit]]></wp:status>
-		<wp:post_parent>4</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[attachment]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<wp:attachment_url><![CDATA[http://base-expert.local/content/uploads/2017/02/300x300-2.png]]></wp:attachment_url>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
-			<wp:meta_value><![CDATA[2017/02/300x300-2.png]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_attachment_metadata]]></wp:meta_key>
-			<wp:meta_value><![CDATA[a:6:{s:5:"width";i:300;s:6:"height";i:300;s:14:"hwstring_small";s:22:"height='96' width='96'";s:4:"file";s:21:"2017/02/300x300-2.png";s:5:"sizes";a:3:{s:9:"thumbnail";a:4:{s:4:"file";s:21:"300x300-2-150x150.png";s:5:"width";i:150;s:6:"height";i:150;s:9:"mime-type";s:9:"image/png";}s:6:"medium";a:4:{s:4:"file";s:21:"300x300-2-300x300.png";s:5:"width";i:300;s:6:"height";i:300;s:9:"mime-type";s:9:"image/png";}s:11:"teaser-half";a:4:{s:4:"file";s:21:"300x300-2-300x270.png";s:5:"width";i:300;s:6:"height";i:270;s:9:"mime-type";s:9:"image/png";}}s:10:"image_meta";a:12:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}}}]]></wp:meta_value>
 		</wp:postmeta>
 	</item>
 	<item>
