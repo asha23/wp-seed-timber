@@ -1221,84 +1221,6 @@
                     ],
                     "min": "",
                     "max": ""
-                },
-                {
-                    "key": "57daa1b21c10f",
-                    "name": "category_category_block",
-                    "label": "Category - Category Block",
-                    "display": "block",
-                    "sub_fields": [
-                        {
-                            "key": "field_589d93dac31af",
-                            "label": "Layout Title",
-                            "name": "layout_title",
-                            "type": "text",
-                            "instructions": "Name this content block",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": "",
-                            "maxlength": ""
-                        },
-                        {
-                            "key": "field_57daaeb1dc31b",
-                            "label": "List Type",
-                            "name": "list_type",
-                            "type": "select",
-                            "instructions": "Please select the list type. Can either be a block (stacked content) or a teaser (3x3 grid)",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "choices": {
-                                "block": "Block Type",
-                                "teaser": "Teaser Type"
-                            },
-                            "default_value": [
-                                "teaser"
-                            ],
-                            "allow_null": 0,
-                            "multiple": 0,
-                            "ui": 0,
-                            "ajax": 0,
-                            "return_format": "value",
-                            "placeholder": ""
-                        },
-                        {
-                            "key": "field_57daa1c81c110",
-                            "label": "Category Name",
-                            "name": "category_name",
-                            "type": "taxonomy",
-                            "instructions": "<p>This creates a loop block for a single category<\/p>\r\n<p>This should be the slug of the category - For example \"board-member\"<\/p>",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "taxonomy": "category",
-                            "field_type": "radio",
-                            "allow_null": 0,
-                            "add_term": 0,
-                            "save_terms": 0,
-                            "load_terms": 0,
-                            "return_format": "object",
-                            "multiple": 0
-                        }
-                    ],
-                    "min": "",
-                    "max": ""
                 }
             ]
         }
@@ -1317,6 +1239,13 @@
                 "operator": "==",
                 "value": "page-examples.php"
             }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "examples"
+            }
         ]
     ],
     "menu_order": 0,
@@ -1334,5 +1263,5 @@
     ],
     "active": 1,
     "description": "These are the main page based content blocks",
-    "modified": 1489054022
+    "modified": 1489054848
 }
