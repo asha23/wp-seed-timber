@@ -65,8 +65,7 @@ Install bower if it's not already installed on your machine
 
     $ yarn add -g bower
 
-Step by step:
-------------------------------------------------
+## Step by step:
 
 The seed theme uses Gulp and Yarn for dependency management. Yarn is a dependency manager created by Facebook and it seems to be way faster than using npm. It will pick up all your npm dependencies and use them, so it's very similar
 
@@ -77,8 +76,7 @@ In your terminal, cd into your theme directory and execute
 
 This will get everything set up, ready for you to start developing with the theme.
 
-Gulp commands
-------------
+## Gulp commands
 
     $ gulp watch
     $ gulp images
@@ -102,15 +100,13 @@ gulp
 
 on it's own to do the tasks once.
 
-Setting up the custom fields
-================
+## Setting up the custom fields
 
 Assuming you have Advanced Custom Fields Pro installed (Which is a requirement) - All the fields are ready to go in this theme. However, you will need to sync them for them to fall into place.
 
 In your field groups, you will see Sync Available.
 
-Templates
-================
+## Templates
 
 There are a couple of templates for use with the Flexible Content modules. In your page, you should use the " Page with content blocks" template. This will set up the fields for use in this page
 
@@ -118,8 +114,7 @@ There is an example custom post type, called, "example" - You'll see this in the
 
 In the includes folder, you can add further custom post types by opening custom-post-types.php
 
-Sample Data
-================
+## Sample Data
 
 This is found in the /example_data folder.
 
@@ -129,8 +124,7 @@ Use the Wordpress Importer to import the sample data into your theme. This will 
 
 Once you have imported the data, you should delete this folder.
 
-wp-seed-timber Folder Structure
-================
+## wp-seed-timber Folder Structure
 
 Inside the theme, you will find the following structure. This assumes you know a bit about WordPress theming techniques. It's essentially a bare bones sensible structure.
 
@@ -164,8 +158,7 @@ This is where all the .twig files live. These are split out into a sensible fold
 
 This will automatically be added as soon as you run ```bower install```.
 
-Notes on the Gulpfile.js
-========================
+## Notes on the Gulpfile.js
 
 This file contains all the path structures for connecting up your Bower dependencies, it's relatively straightforward to create links to any new Bower components and dependencies you want to add to the compilation process.
 
@@ -173,15 +166,13 @@ We pull the scripts into the ```js/vendor-libs``` folder and then compile them i
 
 Generally speaking, these paths are the only things you should need to touch inside this file, but if you know a better way of doing some of the tasks inside here, then feel free to adjust it to suit your working methods - This Gulpfile is a work in progress.
 
-Notes on using Bower for dependency management
-==============================================
+## Notes on using Bower for dependency management
 
 Where possible, you should use Bower for any JavaScript or css modules you want to add to this theme. A lot of commonly used libraries and frameworks are now part of the Bower ecosystem. This will make sure that all your dependencies remain intact and that you are always using the most up-to-date version of the library.
 
 If you haven't been to a project in a while it's worth running a ```bower update``` periodically.
 
-General notes
-==============================================
+## General notes
 
 ```/node_modules```, ```/bower``` ```wp-config``` and many other files are ignored. You shouldn't include these folders in the deployment as it will cause unnecessary bloat. It is preferable that you pull to staging or live from the repository, rather than uploading files via ftp.
 
