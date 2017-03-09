@@ -3,8 +3,10 @@
 /// Mixins
 /// @author Ash Whiting
 ////
-
+// ===================================
+// ===================================
 // Text alignment
+// ===================================
 
 .text-left {
 	text-align:left;
@@ -22,7 +24,9 @@
 	}
 }
 
+// ===================================
 // headers
+// ===================================
 
 .h1, .h2, .h3, h1, h2, h3 {
     margin-top: 0;
@@ -34,5 +38,19 @@
 
 	@media(max-width:$screen-xs-max) {
 		text-align:center;
+	}
+}
+
+// ===================================
+// Links
+// ===================================
+
+a {
+	transition:color 0.5s ease;
+
+	&:active,
+	&:focus,
+	&:hover {
+		text-decoration:none;
 	}
 }

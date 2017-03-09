@@ -1,11 +1,31 @@
+{# Custom post type logic #}
 
-<section class="container">
+<section class="container teaser-block">
 	<div class="row">
+
 		{% for post in examples %}
-			<header>
-				<h1>{{post.title}}</h1>
-			</header>
-			{{post.excerpt}}
+			{% set example_id = post.id %}
+			{% set excerpt = post.post_excerpt %}
+			{% set title = post.title %}
+			{% set teaser_thumb = post.thumbnail.src("teaser-main") %}
+
+			<div class="inner teaser-quarter">
+				<article class="panel panel-default custom-post-teaser">
+
+					<figure class="panel-body">
+						<a href="{{ TimberPost(teaser_id).link }}"><img src="{{ teaser_thumb }}" class="img-respond" alt="{{ teaser_title }}"></a>
+					</figure>
+
+					<div class="panel-footer">
+						<header>
+							<h4>{{title}}</h4>
+						</header>
+						<p>{{excerpt}}</p>
+						<a href="{{ TimberPost(example_id).link }}" class="btn btn-default">Read more <i class="fa fa-chevron-right"></i></a>
+					</div>
+
+				</article>
+			</div>
 		{% endfor %}
 	</div>
 </section>
