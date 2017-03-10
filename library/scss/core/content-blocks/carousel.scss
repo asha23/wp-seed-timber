@@ -5,47 +5,48 @@
 ////
 
 .carousel {
-    .row {
-        .basic-carousel,
-        .advanced-carousel {
-            @include make-xs-column(12);
 
-            .slide {
-                width:100%;
+    .advanced-carousel,
+    .basic-carousel {
+        @include make-xs-column(12);
 
-                .text-overlay {
-                    background:white;
-                    background:rgba(255,255,255,0.5);
-                    padding:30px;
+        .slide {
+            width: 100%;
 
-                    @media (min-width:$screen-xs-max) {
-                        position:absolute;
-                        bottom:0;
-                        left:0;
-                        right:0;
-                    }
+            .text-overlay {
+                background: white;
+                background: rgba(255,255,255,0.5);
+                padding: 30px;
 
-                    @media (max-width:$screen-xs-max) {
-                        position:relative;
-                        text-align:center;
-                    }
+                @media (min-width:$screen-xs-max) {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                }
+
+                @media (max-width:$screen-xs-max) {
+                    position: relative;
+                    text-align: center;
                 }
             }
         }
+    }
 
-        .custom-page {
-            margin-top:20px;
-            text-align:center;
-            @include fs(52);
-            cursor:pointer;
+    .custom-page {
+        margin-top: 20px;
+        text-align: center;
+        @include fs(52);
+        cursor: pointer;
 
-            span {
-                opacity:0.5;
-                transition:opacity 0.5s ease;
-            }
-            .cycle-pager-active {
-                opacity:1;
-            }
+        span {
+            opacity: 0.5;
+            transition: opacity 0.5s ease;
+        }
+
+        .cycle-pager-active {
+            opacity: 1;
         }
     }
+    
 }
