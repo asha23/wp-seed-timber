@@ -1,0 +1,23 @@
+////
+/// text-block.scss
+/// Blocks
+/// @author Ash Whiting
+////
+
+.text-block {
+	margin-bottom:30px;
+	margin-top:30px;
+
+	.row {
+
+		.text-block-left {
+
+			figure {
+
+				@media (max-width:$screen-xs-max) {
+					margin-bottom:30px;
+				}
+			}
+		}
+	}
+}

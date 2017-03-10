@@ -43,3 +43,19 @@ body {
 		visibility:hidden!important;
 	}
 }
+
+// 404
+
+.not-found {
+	.row {
+		min-height:500px;
+		text-align:center;
+
+		h1 {
+			padding-bottom:5px;
+			border-bottom:1px solid $gray-lighter;
+			margin-bottom:40px;
+			margin-top:100px;
+		}
+	}
+}

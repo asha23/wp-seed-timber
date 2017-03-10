@@ -25,11 +25,13 @@
 {% if toggle == "1" %}
 	<section class="{{ container_class }} custom-header {{ margin_class }}">
 		<div class="{{ inner_container }} {{text_align}}">
+
 			{% if title_type == "auto" %}
 				<h2>{{ post.post_title }}</h2>
 			{% else %}
 				<h2>{{ title_text }}</h2>
 			{% endif %}
+
 		</div>
 	</section>
 {% endif %}

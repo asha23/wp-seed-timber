@@ -1,0 +1,25 @@
+////
+/// accordion.scss
+/// Blocks
+/// @author Ash Whiting
+////
+
+.accordion {
+
+	.panel-group {
+
+		.panel {
+
+			.panel-heading {
+				display:block;
+				text-decoration:none;
+
+				&:hover,
+				&:focus,
+				&:active {
+					text-decoration:none;
+				}
+			}
+		}
+	}
+}

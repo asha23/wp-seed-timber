@@ -4,6 +4,9 @@
 /// @author Ash Whiting
 ////
 
+/// Rems
+/// @include fs(font-size, line-height)
+
 @mixin fs($size:1.6, $line: $size){
       font-size:   ($size * 10) + px;
       line-height: ($line * 10) + px;

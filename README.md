@@ -144,7 +144,7 @@ This is all the core theme php. Files in here are included from the site's root 
 /library
 -------
 
-This is where you can edit your ```styles.scss``` file and also ```scripts.js```
+This is where you can edit your ```styles.scss``` file and also ```scripts.js```. The /core folder contains all the scss files you'll need.
 
 /views
 -----

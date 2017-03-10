@@ -29,7 +29,7 @@
 	{% endif %}
 
 	{% if teaser_header_text %}
-		<article class="gallery-text">
+		<article class="teaser-text">
 			{{ teaser_header_text }}
 		</article>
 	{% endif %}
@@ -44,6 +44,7 @@
 			{% set teaser_excerpt = teaser.post_excerpt %}
 
 			<div class="inner {{ teaser_class }}">
+
 				<div class="panel panel-default teaser-item">
 
 					<figure class="panel-body">

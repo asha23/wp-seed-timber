@@ -9,14 +9,16 @@
 {% set image = con.image %}
 
 {% if(parallax) %}
+
 	<!-- This uses parallax.js http://pixelcog.github.io/parallax.js/ -->
+
 	<section class="container-fluid full-width-image-parallax img-respond dt"
 		data-parallax="scroll"
 		data-image-src="{{ TimberImage(image).src }}"
 		data-speed="{{ parallax_speed }}"
 		data-bleed="1"
 		iosFix="0"
-		style="">
+	>
 
 		{% if overlay %}
 

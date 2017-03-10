@@ -1,0 +1,10 @@
+////
+/// download.scss
+/// Blocks
+/// @author Ash Whiting
+////
+
+.download-item {
+	@include make-sm-column(4);
+	@include make-md-column(3);
+}

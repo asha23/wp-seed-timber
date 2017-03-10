@@ -1,0 +1,38 @@
+////
+/// full-width-image.scss
+/// Blocks
+/// @author Ash Whiting
+////
+
+.full-width-image,
+.full-width-image-parallax {
+	position:relative;
+	padding:0;
+
+	.overlay-text {
+		position:absolute;
+		text-align:center;
+
+		@media (min-width:$screen-xs-max) {
+			left:0;
+			bottom:0;
+			right:0;
+			padding:30px 50px;
+		}
+
+		@media (max-width:$screen-xs-max) {
+			position:relative;
+			padding:10px 0;
+			clear:both;
+		}
+	}
+}
+
+.full-width-image-parallax {
+	background-size: 100% auto;
+	height:500px;
+
+	.overlay-text {
+		background:rgba(255,255,255,0.3);
+	}
+}

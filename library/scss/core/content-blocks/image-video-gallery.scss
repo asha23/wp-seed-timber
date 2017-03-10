@@ -1,0 +1,87 @@
+////
+/// image-video-gallery.scss
+/// Blocks
+/// @author Ash Whiting
+////
+
+.image-gallery,
+.video-gallery {
+
+	.light-gallery-images,
+	.light-gallery-videos {
+
+		.inner {
+			cursor:pointer;
+			@include make-sm-column(4);
+			@include make-md-column(3);
+		}
+	}
+
+	.light-gallery-images {
+
+		.inner {
+
+			.gallery-item {
+
+				.panel-body {
+					position:relative;
+
+					.expand-overlay {
+						position:absolute;
+						right:20px;
+						top:20px;
+
+						.expand {
+							@include fs(18);
+
+							.fa-stack {
+
+								.fa-circle {
+									text-shadow: 0px 0px 5px #000;
+									text-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.light-gallery-videos {
+
+		.inner {
+
+			.video-item {
+
+				.panel-body {
+					position:relative;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+
+					.expand-overlay {
+						position:absolute;
+						text-align:center;
+
+						.play {
+							@include fs(18);
+
+							.fa-stack {
+
+								.fa-circle {
+									text-shadow: 0px 0px 5px #000;
+									text-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+								}
+
+								.fa-play {
+									margin-left:2px;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

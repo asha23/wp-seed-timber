@@ -6,6 +6,7 @@
 {% set video_text = con.video_text %}
 
 <section class="container video-gallery">
+
 	{% if video_title %}
 		<header>
 			<h2>{{ video_title }}</h2>
@@ -31,16 +32,18 @@
 
 				<figure class="panel panel-default video-item" data-src="https://www.youtube.com/embed/{{ vid_url }}">
 
-					<div class="panel-heading">
-						<div class="">
-							<h4><i class="fa fa-play"></i></h4>
-						</div>
-					</div>
-
 					<figure class="panel-body">
+						<div class="expand-overlay">
+							<div class="play">
+								<span class="fa-stack fa-sm">
+									<i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+									<i class="fa fa-play fa-stack-1x"></i>
+								</span>
+							</div>
+						</div>
 						<img src="{{ TimberImage(vid_poster).src }}" class="img-respond" alt="{{ vid_title }}">
 					</figure>
-					
+
 					<div class="panel-footer inner-overlay">
 						<div class="overlay-text">
 							<h4>{{ vid_title }}</h4>

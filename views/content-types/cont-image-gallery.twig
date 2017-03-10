@@ -6,6 +6,7 @@
 {% set gallery_text = con.image_gallery_text %}
 
 <section class="container image-gallery">
+
 	{% if gallery_title %}
 		<header>
 			<h2>{{ gallery_title }}</h2>
@@ -30,11 +31,15 @@
 
 				<figure class="panel panel-default gallery-item" data-src="{{ TimberImage(img_url).src }}">
 
-					<div class="panel-heading">
-						<h4><i class="fa fa-expand"></i></h4>
-					</div>
-
 					<div class="panel-body">
+						<div class="expand-overlay">
+							<div class="expand">
+								<span class="fa-stack fa-sm">
+									<i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+									<i class="fa fa-expand fa-stack-1x"></i>
+								</span>
+							</div>
+						</div>
 						<img src="{{ TimberImage(img_url).src }}" class="img-respond" alt="{{ img_title }}">
 					</div>
 
