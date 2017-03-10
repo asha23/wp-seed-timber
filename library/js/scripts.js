@@ -45,4 +45,30 @@ jQuery(document).ready(function($) {
         $(this).toggleClass('active');
     });
 
+	// Carousels
+	// ============================================
+
+	basic_carousel = $('.basic-carousel');
+	advanced_carousel = $('.advanced-carousel');
+
+	$('.basic-carousel').cycle({
+		slides: "> .slide",
+		fx: "scrollHorz",
+		timeout:6000,
+		pager: '.custom-page',
+		swipe:true,
+		speed:500,
+		pauseOnHover:true,
+	});
+
+	$('.advanced-carousel').cycle({
+		slides: "> .slide",
+		fx: "scrollHorz",
+		timeout:6000,
+		pager: '.custom-page',
+		swipe:true,
+		speed:500,
+		pauseOnHover:true,
+	});
+
 });

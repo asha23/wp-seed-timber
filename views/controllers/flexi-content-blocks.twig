@@ -26,6 +26,8 @@
 				{% include 'content-types/cont-category.twig' %}
 			{% elseif content_block.acf_fc_layout == 'content_custom_header' %}
 				{% include 'content-types/cont-header.twig' %}
+			{% elseif content_block.acf_fc_layout == 'content_carousel' %}
+				{% include 'content-types/cont-carousel.twig' %}
 			{% endif %}
 
 		{% endfor %}

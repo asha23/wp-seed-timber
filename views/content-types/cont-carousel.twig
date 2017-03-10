@@ -1,0 +1,49 @@
+{# Carousel Logic #}
+
+{% set con = content_block %}
+
+{% set carousel_header = con.carousel_header %}
+{% set carousel_header_text = con.carousel_header_text %}
+{% set carousel_type = con.carousel_type %}
+{% set carousel_images = con.carousel_images %}
+
+
+
+<section class="container carousel">
+    <div class="row">
+
+        {% if carousel_type == "just-images" %}
+
+            <div class="basic-carousel">
+
+                {% for image in carousel_images %}
+                    <figure class="slide">
+                        <img src="{{ TimberImage(image).src }}" class="img-respond">
+                    </figure>
+                {% endfor %}
+
+            </div>
+
+        {% else %}
+
+            <div class="advanced-carousel">
+
+                {% for image in carousel_images %}
+                    <figure class="slide">
+                        <img src="{{ TimberImage(image).src }}" class="img-respond">
+
+                        <figcaption class="text-overlay">
+                            <h3>{{ TimberImage(image).title }}</h3>
+                            <p>{{ TimberImage(image).caption }}</p>
+                        </figcaption>
+                    </figure>
+                {% endfor %}
+
+            </div>
+
+        {% endif %}
+
+        <div class="custom-page"></div>
+
+    </div>
+</section>

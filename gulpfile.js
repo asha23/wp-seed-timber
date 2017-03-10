@@ -37,6 +37,8 @@ var jsFileList = [
     config.bowerPath 		+ 'bootstrap-sass/assets/javascripts/bootstrap.js',
 	config.bowerPath        + 'matchHeight/dist/jquery.matchHeight.js',
 	config.bowerPath        + 'parallax.js/parallax.js',
+	config.bowerPath        + 'jquery-cycle2/build/jquery.cycle2.js',
+	config.bowerPath        + 'jquery-cycle2/src/jquery.cycle2.swipe.js',
 	config.jsPathVendor  	+ 'lightgallery/lightgallery.js',
 	config.jsPathVendor  	+ 'lg-thumbnail/lg-thumbnail.js',
 	config.jsPathVendor  	+ 'lg-video/lg-video.js',
@@ -68,6 +70,7 @@ var cssSelectorLimit = require('gulp-css-selector-limit');
 var cleanCSS = require('gulp-clean-css');
 var sourcemaps = require('gulp-sourcemaps');
 var plumber = require('gulp-plumber');
+
 // Load all the other plugins by referring to package.json
 
 // ===========================================================================================================
