@@ -4,9 +4,42 @@
 /// @author Ash Whiting
 ////
 
+body {
+	margin-top:136px;
+
+	@media (max-width:$screen-xs-max) {
+		margin-top:0;
+	}
+}
+
 // Preferred responsive image (no display:block)
 
 .img-respond {
 	width:100%;
 	height:auto;
+}
+
+// Show/Hide mobile/desktop
+
+.dt {
+	display:block;
+
+	@media (max-width:$screen-xs-max) {
+		display:none;
+	}
+}
+
+.mob {
+	display:block;
+
+	@media (min-width:$screen-xs-max) {
+		display:none;
+	}
+}
+
+.parallax-mirror {
+	@media (max-width:$screen-xs-max) {
+		display:none!important;
+		visibility:hidden!important;
+	}
 }

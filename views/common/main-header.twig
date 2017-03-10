@@ -2,10 +2,17 @@
 
 <body class="{{ body_class }}" >
 
-<header id="header" class="container-fluid">
-    <div class="row">
 
-		<nav class="navbar navbar-default" role="navigation">
+</section>
+<header id="header" class="container-fluid navbar-fixed-top">
+    <div class="row">
+		<div class="navbar-main-logo">
+			<h3><a href="{{function('bloginfo','url')}}/" title="{{ function('wp_title') }}" rel="homepage">
+				{{ function('bloginfo','title') }}
+			</a></h3>
+		</div>
+		<nav class="navbar navbar-default " role="navigation">
+
 			<div class="navbar-header">
 
 				<div class="navbar-toggle" data-toggle="collapse" data-target="#nav-menu">
@@ -14,9 +21,7 @@
 					<div></div>
 				</div>
 
-				<a href="{{function('bloginfo','url')}}/" title="{{ function('wp_title') }}" rel="homepage" class="navbar-brand">
-					{{ function('bloginfo','title') }}
-				</a>
+
 
 			</div>
 

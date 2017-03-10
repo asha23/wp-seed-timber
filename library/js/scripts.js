@@ -33,7 +33,6 @@ jQuery(document).ready(function($) {
 		mode: 'lg-fade'
 	});
 
-
 	// Element matching (matchheight.js)
 	// ============================================
 

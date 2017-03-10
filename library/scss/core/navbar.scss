@@ -4,6 +4,16 @@
 /// @author Ash Whiting
 ////
 
+.navbar-main-logo {
+	background:white;
+	text-align:center;
+	padding-top:30px;
+	padding-bottom:30px;
+	h3 {
+		margin:0;
+	}
+}
+
 .navbar-default {
 	border-radius:0;
 	border:none;
@@ -21,6 +31,9 @@
 	}
 
 	.navbar-nav {
+		display:inline-block;
+		float:none;
+		vertical-align:top;
 		> li > a {
 
 			&:focus,
@@ -95,7 +108,7 @@
 
 	.navbar-collapse,
 	.navbar-form {
-
+		text-align:center;
 	}
 
 	// Dropdown menu items
@@ -140,5 +153,11 @@
 				}
 			}
 		}
+	}
+}
+
+.navbar-fixed-top {
+	@media (max-width:$screen-xs-max) {
+		position:relative;
 	}
 }

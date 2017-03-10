@@ -26,10 +26,10 @@
 >
 
 <channel>
-	<title>Base Expert</title>
+	<title>Timber WordPress Framework</title>
 	<link>http://base-expert.local</link>
 	<description></description>
-	<pubDate>Thu, 09 Mar 2017 16:28:59 +0000</pubDate>
+	<pubDate>Fri, 10 Mar 2017 11:50:34 +0000</pubDate>
 	<language>en-GB</language>
 	<wp:wxr_version>1.2</wp:wxr_version>
 	<wp:base_site_url>http://base-expert.local</wp:base_site_url>
@@ -1921,7 +1921,7 @@ As a new WordPress user, you should go to <a href="http://base-expert.local/wp/w
 	</item>
 	<item>
 		<title>Style Guide</title>
-		<link>http://base-expert.local/style-guide/</link>
+		<link>http://base-expert.local/</link>
 		<pubDate>Fri, 10 Feb 2017 09:24:17 +0000</pubDate>
 		<dc:creator><![CDATA[awhiting]]></dc:creator>
 		<guid isPermaLink="false">http://base-expert.local/home/</guid>
@@ -2086,7 +2086,7 @@ Ut at convallis erat. Fusce ornare laoreet metus et tempus. Cras ex dui, interdu
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[global_content_types_2_title]]></wp:meta_key>
-			<wp:meta_value><![CDATA[Lorem Ipsum]]></wp:meta_value>
+			<wp:meta_value><![CDATA[Full Width Text Block]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_global_content_types_2_title]]></wp:meta_key>
@@ -2232,7 +2232,7 @@ Ut at convallis erat. Fusce ornare laoreet metus et tempus. Cras ex dui, interdu
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[global_content_types_1_title_type]]></wp:meta_key>
-			<wp:meta_value><![CDATA[custom]]></wp:meta_value>
+			<wp:meta_value><![CDATA[auto]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_global_content_types_1_title_type]]></wp:meta_key>
@@ -2272,7 +2272,7 @@ Ut at convallis erat. Fusce ornare laoreet metus et tempus. Cras ex dui, interdu
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[global_content_types_15_teaser_header]]></wp:meta_key>
-			<wp:meta_value><![CDATA[Teasers]]></wp:meta_value>
+			<wp:meta_value><![CDATA[Full Width Teaser]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_global_content_types_15_teaser_header]]></wp:meta_key>
@@ -2280,7 +2280,7 @@ Ut at convallis erat. Fusce ornare laoreet metus et tempus. Cras ex dui, interdu
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[global_content_types_15_teaser_header_text]]></wp:meta_key>
-			<wp:meta_value><![CDATA[Example of teaser rows]]></wp:meta_value>
+			<wp:meta_value><![CDATA[Lorem ipsum dolor sit amet, est at minim ubique, sed ut movet sapientem expetenda. Primis nominavi quaerendum ea pri. Vivendo adversarium instructior at sea, sed tation everti necessitatibus ex. Id has efficiendi liberavisse, modo quando ut mei. Ad iudico constituto per, ad cum adolescens deseruisse. Ex dico libris has.]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_global_content_types_15_teaser_header_text]]></wp:meta_key>
@@ -2322,7 +2322,7 @@ Ad suas scripserit eos, ex ius nonumy deleniti similique, ius id elaboraret adve
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[global_content_types_3_title]]></wp:meta_key>
-			<wp:meta_value><![CDATA[Hello World]]></wp:meta_value>
+			<wp:meta_value><![CDATA[Split Text Block - Image Left]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_global_content_types_3_title]]></wp:meta_key>
@@ -2470,7 +2470,7 @@ Ad suas scripserit eos, ex ius nonumy deleniti similique, ius id elaboraret adve
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[global_content_types_16_teaser_header]]></wp:meta_key>
-			<wp:meta_value><![CDATA[]]></wp:meta_value>
+			<wp:meta_value><![CDATA[Half Width Teasers]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_global_content_types_16_teaser_header]]></wp:meta_key>
@@ -2478,7 +2478,7 @@ Ad suas scripserit eos, ex ius nonumy deleniti similique, ius id elaboraret adve
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[global_content_types_16_teaser_header_text]]></wp:meta_key>
-			<wp:meta_value><![CDATA[]]></wp:meta_value>
+			<wp:meta_value><![CDATA[Lorem ipsum dolor sit amet, est at minim ubique, sed ut movet sapientem expetenda. Primis nominavi quaerendum ea pri. Vivendo adversarium instructior at sea, sed tation everti necessitatibus ex. Id has efficiendi liberavisse, modo quando ut mei. Ad iudico constituto per, ad cum adolescens deseruisse. Ex dico libris has.]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_global_content_types_16_teaser_header_text]]></wp:meta_key>
@@ -2510,7 +2510,7 @@ Ad suas scripserit eos, ex ius nonumy deleniti similique, ius id elaboraret adve
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[global_content_types_17_teaser_header]]></wp:meta_key>
-			<wp:meta_value><![CDATA[]]></wp:meta_value>
+			<wp:meta_value><![CDATA[One-Third Width Teasers]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_global_content_types_17_teaser_header]]></wp:meta_key>
@@ -2518,7 +2518,7 @@ Ad suas scripserit eos, ex ius nonumy deleniti similique, ius id elaboraret adve
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[global_content_types_17_teaser_header_text]]></wp:meta_key>
-			<wp:meta_value><![CDATA[]]></wp:meta_value>
+			<wp:meta_value><![CDATA[Lorem ipsum dolor sit amet, est at minim ubique, sed ut movet sapientem expetenda. Primis nominavi quaerendum ea pri. Vivendo adversarium instructior at sea, sed tation everti necessitatibus ex. Id has efficiendi liberavisse, modo quando ut mei. Ad iudico constituto per, ad cum adolescens deseruisse. Ex dico libris has.]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_global_content_types_17_teaser_header_text]]></wp:meta_key>
@@ -2584,7 +2584,7 @@ Nisl viderer disputationi est ad, pro cu dictas omnesque voluptaria. Ullum negle
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[global_content_types_5_title]]></wp:meta_key>
-			<wp:meta_value><![CDATA[Lorem Ipsum]]></wp:meta_value>
+			<wp:meta_value><![CDATA[Split Text Block - Image Right]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_global_content_types_5_title]]></wp:meta_key>
@@ -2706,7 +2706,7 @@ Nisl viderer disputationi est ad, pro cu dictas omnesque voluptaria. Ullum negle
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[global_content_types_7_accordion_text]]></wp:meta_key>
-			<wp:meta_value><![CDATA[An accordion header text]]></wp:meta_value>
+			<wp:meta_value><![CDATA[Lorem ipsum dolor sit amet, est at minim ubique, sed ut movet sapientem expetenda. Primis nominavi quaerendum ea pri. Vivendo adversarium instructior at sea, sed tation everti necessitatibus ex. Id has efficiendi liberavisse, modo quando ut mei. Ad iudico constituto per, ad cum adolescens deseruisse. Ex dico libris has.]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_global_content_types_7_accordion_text]]></wp:meta_key>
@@ -2722,7 +2722,7 @@ Nisl viderer disputationi est ad, pro cu dictas omnesque voluptaria. Ullum negle
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[global_content_types_7_accordion_0_content]]></wp:meta_key>
-			<wp:meta_value><![CDATA[Lorem]]></wp:meta_value>
+			<wp:meta_value><![CDATA[Lorem ipsum dolor sit amet, est at minim ubique, sed ut movet sapientem expetenda. Primis nominavi quaerendum ea pri. Vivendo adversarium instructior at sea, sed tation everti necessitatibus ex. Id has efficiendi liberavisse, modo quando ut mei. Ad iudico constituto per, ad cum adolescens deseruisse. Ex dico libris has.]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_global_content_types_7_accordion_0_content]]></wp:meta_key>
@@ -2738,7 +2738,7 @@ Nisl viderer disputationi est ad, pro cu dictas omnesque voluptaria. Ullum negle
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[global_content_types_7_accordion_1_content]]></wp:meta_key>
-			<wp:meta_value><![CDATA[Ipsum]]></wp:meta_value>
+			<wp:meta_value><![CDATA[Lorem ipsum dolor sit amet, est at minim ubique, sed ut movet sapientem expetenda. Primis nominavi quaerendum ea pri. Vivendo adversarium instructior at sea, sed tation everti necessitatibus ex. Id has efficiendi liberavisse, modo quando ut mei. Ad iudico constituto per, ad cum adolescens deseruisse. Ex dico libris has.]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_global_content_types_7_accordion_1_content]]></wp:meta_key>
@@ -2818,7 +2818,7 @@ Nisl viderer disputationi est ad, pro cu dictas omnesque voluptaria. Ullum negle
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[global_content_types_9_downloads_text]]></wp:meta_key>
-			<wp:meta_value><![CDATA[Lorem ipsum]]></wp:meta_value>
+			<wp:meta_value><![CDATA[Lorem ipsum dolor sit amet, est at minim ubique, sed ut movet sapientem expetenda. Primis nominavi quaerendum ea pri. Vivendo adversarium instructior at sea, sed tation everti necessitatibus ex. Id has efficiendi liberavisse, modo quando ut mei. Ad iudico constituto per, ad cum adolescens deseruisse. Ex dico libris has.]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_global_content_types_9_downloads_text]]></wp:meta_key>
@@ -3058,7 +3058,7 @@ Nisl viderer disputationi est ad, pro cu dictas omnesque voluptaria. Ullum negle
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[global_content_types_11_image_gallery_text]]></wp:meta_key>
-			<wp:meta_value><![CDATA[Some text about this section]]></wp:meta_value>
+			<wp:meta_value><![CDATA[Lorem ipsum dolor sit amet, est at minim ubique, sed ut movet sapientem expetenda. Primis nominavi quaerendum ea pri. Vivendo adversarium instructior at sea, sed tation everti necessitatibus ex. Id has efficiendi liberavisse, modo quando ut mei. Ad iudico constituto per, ad cum adolescens deseruisse. Ex dico libris has.]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_global_content_types_11_image_gallery_text]]></wp:meta_key>
@@ -3138,7 +3138,7 @@ Nisl viderer disputationi est ad, pro cu dictas omnesque voluptaria. Ullum negle
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[global_content_types_13_video_text]]></wp:meta_key>
-			<wp:meta_value><![CDATA[Lorem ipsum dolor icit consecteur]]></wp:meta_value>
+			<wp:meta_value><![CDATA[Lorem ipsum dolor sit amet, est at minim ubique, sed ut movet sapientem expetenda. Primis nominavi quaerendum ea pri. Vivendo adversarium instructior at sea, sed tation everti necessitatibus ex. Id has efficiendi liberavisse, modo quando ut mei. Ad iudico constituto per, ad cum adolescens deseruisse. Ex dico libris has.]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_global_content_types_13_video_text]]></wp:meta_key>
@@ -3346,7 +3346,7 @@ Nisl viderer disputationi est ad, pro cu dictas omnesque voluptaria. Ullum negle
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[global_content_types_18_teaser_header]]></wp:meta_key>
-			<wp:meta_value><![CDATA[]]></wp:meta_value>
+			<wp:meta_value><![CDATA[One Quarter Width Teasers]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_global_content_types_18_teaser_header]]></wp:meta_key>
@@ -3354,7 +3354,7 @@ Nisl viderer disputationi est ad, pro cu dictas omnesque voluptaria. Ullum negle
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[global_content_types_18_teaser_header_text]]></wp:meta_key>
-			<wp:meta_value><![CDATA[]]></wp:meta_value>
+			<wp:meta_value><![CDATA[Lorem ipsum dolor sit amet, est at minim ubique, sed ut movet sapientem expetenda. Primis nominavi quaerendum ea pri. Vivendo adversarium instructior at sea, sed tation everti necessitatibus ex. Id has efficiendi liberavisse, modo quando ut mei. Ad iudico constituto per, ad cum adolescens deseruisse. Ex dico libris has.]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_global_content_types_18_teaser_header_text]]></wp:meta_key>
@@ -3488,7 +3488,63 @@ Nisl viderer disputationi est ad, pro cu dictas omnesque voluptaria. Ullum negle
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
-			<wp:meta_value><![CDATA[default]]></wp:meta_value>
+			<wp:meta_value><![CDATA[page-content-blocks.php]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[global_content_types]]></wp:meta_key>
+			<wp:meta_value><![CDATA[a:1:{i:0;s:21:"content_custom_header";}]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_global_content_types]]></wp:meta_key>
+			<wp:meta_value><![CDATA[field_57d911d19fc60]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[global_content_types_0_layout_title]]></wp:meta_key>
+			<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_global_content_types_0_layout_title]]></wp:meta_key>
+			<wp:meta_value><![CDATA[field_58c02b41c5b4a]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[global_content_types_0_toggle]]></wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_global_content_types_0_toggle]]></wp:meta_key>
+			<wp:meta_value><![CDATA[field_58c02992ca2ce]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[global_content_types_0_full_width]]></wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_global_content_types_0_full_width]]></wp:meta_key>
+			<wp:meta_value><![CDATA[field_58c16c6f9d0f9]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[global_content_types_0_text_alignment]]></wp:meta_key>
+			<wp:meta_value><![CDATA[text-center]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_global_content_types_0_text_alignment]]></wp:meta_key>
+			<wp:meta_value><![CDATA[field_58c12dd94129e]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[global_content_types_0_title_type]]></wp:meta_key>
+			<wp:meta_value><![CDATA[auto]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_global_content_types_0_title_type]]></wp:meta_key>
+			<wp:meta_value><![CDATA[field_58c02a30f2934]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[global_content_types_0_add_margins]]></wp:meta_key>
+			<wp:meta_value><![CDATA[0]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_global_content_types_0_add_margins]]></wp:meta_key>
+			<wp:meta_value><![CDATA[field_58c02d290b82c]]></wp:meta_value>
 		</wp:postmeta>
 	</item>
 	<item>
@@ -3522,7 +3578,63 @@ Nisl viderer disputationi est ad, pro cu dictas omnesque voluptaria. Ullum negle
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
-			<wp:meta_value><![CDATA[default]]></wp:meta_value>
+			<wp:meta_value><![CDATA[page-content-blocks.php]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[global_content_types_0_layout_title]]></wp:meta_key>
+			<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_global_content_types_0_layout_title]]></wp:meta_key>
+			<wp:meta_value><![CDATA[field_58c02b41c5b4a]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[global_content_types_0_toggle]]></wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_global_content_types_0_toggle]]></wp:meta_key>
+			<wp:meta_value><![CDATA[field_58c02992ca2ce]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[global_content_types_0_full_width]]></wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_global_content_types_0_full_width]]></wp:meta_key>
+			<wp:meta_value><![CDATA[field_58c16c6f9d0f9]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[global_content_types_0_text_alignment]]></wp:meta_key>
+			<wp:meta_value><![CDATA[text-center]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_global_content_types_0_text_alignment]]></wp:meta_key>
+			<wp:meta_value><![CDATA[field_58c12dd94129e]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[global_content_types_0_title_type]]></wp:meta_key>
+			<wp:meta_value><![CDATA[auto]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_global_content_types_0_title_type]]></wp:meta_key>
+			<wp:meta_value><![CDATA[field_58c02a30f2934]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[global_content_types_0_add_margins]]></wp:meta_key>
+			<wp:meta_value><![CDATA[0]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_global_content_types_0_add_margins]]></wp:meta_key>
+			<wp:meta_value><![CDATA[field_58c02d290b82c]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[global_content_types]]></wp:meta_key>
+			<wp:meta_value><![CDATA[a:1:{i:0;s:21:"content_custom_header";}]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_global_content_types]]></wp:meta_key>
+			<wp:meta_value><![CDATA[field_57d911d19fc60]]></wp:meta_value>
 		</wp:postmeta>
 	</item>
 	<item>
@@ -3675,40 +3787,8 @@ Nisl viderer disputationi est ad, pro cu dictas omnesque voluptaria. Ullum negle
 			<wp:meta_value><![CDATA[page-content-blocks.php]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
-			<wp:meta_key><![CDATA[global_content_types_0_layout_title]]></wp:meta_key>
-			<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_global_content_types_0_layout_title]]></wp:meta_key>
-			<wp:meta_value><![CDATA[field_589d8d5a89d5b]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[global_content_types_0_title]]></wp:meta_key>
-			<wp:meta_value><![CDATA[Lorem Ipsum Dolor]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_global_content_types_0_title]]></wp:meta_key>
-			<wp:meta_value><![CDATA[field_57d9152463850]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[global_content_types_0_block_type]]></wp:meta_key>
-			<wp:meta_value><![CDATA[full-width]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_global_content_types_0_block_type]]></wp:meta_key>
-			<wp:meta_value><![CDATA[field_57d9153063851]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[global_content_types_0_full_width_content]]></wp:meta_key>
-			<wp:meta_value><![CDATA[Lorem Ipsum Dolor]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_global_content_types_0_full_width_content]]></wp:meta_key>
-			<wp:meta_value><![CDATA[field_57d91c1180e1f]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
 			<wp:meta_key><![CDATA[global_content_types]]></wp:meta_key>
-			<wp:meta_value><![CDATA[a:1:{i:0;s:18:"content_text_block";}]]></wp:meta_value>
+			<wp:meta_value><![CDATA[a:2:{i:0;s:21:"content_custom_header";i:1;s:18:"content_text_block";}]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_global_content_types]]></wp:meta_key>
@@ -3717,6 +3797,86 @@ Nisl viderer disputationi est ad, pro cu dictas omnesque voluptaria. Ullum negle
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_thumbnail_id]]></wp:meta_key>
 			<wp:meta_value><![CDATA[139]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[global_content_types_0_layout_title]]></wp:meta_key>
+			<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_global_content_types_0_layout_title]]></wp:meta_key>
+			<wp:meta_value><![CDATA[field_58c02b41c5b4a]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[global_content_types_0_toggle]]></wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_global_content_types_0_toggle]]></wp:meta_key>
+			<wp:meta_value><![CDATA[field_58c02992ca2ce]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[global_content_types_0_full_width]]></wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_global_content_types_0_full_width]]></wp:meta_key>
+			<wp:meta_value><![CDATA[field_58c16c6f9d0f9]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[global_content_types_0_text_alignment]]></wp:meta_key>
+			<wp:meta_value><![CDATA[text-center]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_global_content_types_0_text_alignment]]></wp:meta_key>
+			<wp:meta_value><![CDATA[field_58c12dd94129e]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[global_content_types_0_title_type]]></wp:meta_key>
+			<wp:meta_value><![CDATA[auto]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_global_content_types_0_title_type]]></wp:meta_key>
+			<wp:meta_value><![CDATA[field_58c02a30f2934]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[global_content_types_0_add_margins]]></wp:meta_key>
+			<wp:meta_value><![CDATA[0]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_global_content_types_0_add_margins]]></wp:meta_key>
+			<wp:meta_value><![CDATA[field_58c02d290b82c]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[global_content_types_1_layout_title]]></wp:meta_key>
+			<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_global_content_types_1_layout_title]]></wp:meta_key>
+			<wp:meta_value><![CDATA[field_589d8d5a89d5b]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[global_content_types_1_title]]></wp:meta_key>
+			<wp:meta_value><![CDATA[Lorem Ipsum Dolor]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_global_content_types_1_title]]></wp:meta_key>
+			<wp:meta_value><![CDATA[field_57d9152463850]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[global_content_types_1_block_type]]></wp:meta_key>
+			<wp:meta_value><![CDATA[full-width]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_global_content_types_1_block_type]]></wp:meta_key>
+			<wp:meta_value><![CDATA[field_57d9153063851]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[global_content_types_1_full_width_content]]></wp:meta_key>
+			<wp:meta_value><![CDATA[Lorem Ipsum Dolor]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_global_content_types_1_full_width_content]]></wp:meta_key>
+			<wp:meta_value><![CDATA[field_57d91c1180e1f]]></wp:meta_value>
 		</wp:postmeta>
 	</item>
 	<item>
@@ -4259,7 +4419,7 @@ Nisl viderer disputationi est ad, pro cu dictas omnesque voluptaria. Ullum negle
 	</item>
 	<item>
 		<title>Home</title>
-		<link>http://base-expert.local/</link>
+		<link>http://base-expert.local/home-2__trashed/</link>
 		<pubDate>Thu, 09 Mar 2017 15:58:03 +0000</pubDate>
 		<dc:creator><![CDATA[awhiting]]></dc:creator>
 		<guid isPermaLink="false">http://base-expert.local/?page_id=214</guid>
@@ -4271,8 +4431,8 @@ Nisl viderer disputationi est ad, pro cu dictas omnesque voluptaria. Ullum negle
 		<wp:post_date_gmt><![CDATA[2017-03-09 15:58:03]]></wp:post_date_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[home-2]]></wp:post_name>
-		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_name><![CDATA[home-2__trashed]]></wp:post_name>
+		<wp:status><![CDATA[trash]]></wp:status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type><![CDATA[page]]></wp:post_type>
@@ -4285,6 +4445,18 @@ Nisl viderer disputationi est ad, pro cu dictas omnesque voluptaria. Ullum negle
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
 			<wp:meta_value><![CDATA[default]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_trash_meta_status]]></wp:meta_key>
+			<wp:meta_value><![CDATA[publish]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_trash_meta_time]]></wp:meta_key>
+			<wp:meta_value><![CDATA[1489145020]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_desired_post_slug]]></wp:meta_key>
+			<wp:meta_value><![CDATA[home-2]]></wp:meta_value>
 		</wp:postmeta>
 	</item>
 </channel>

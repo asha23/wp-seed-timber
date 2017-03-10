@@ -10,11 +10,12 @@
 
 {% if(parallax) %}
 	<!-- This uses parallax.js http://pixelcog.github.io/parallax.js/ -->
-	<section class="container-fluid full-width-image-parallax img-respond"
+	<section class="container-fluid full-width-image-parallax img-respond dt"
 		data-parallax="scroll"
 		data-image-src="{{ TimberImage(image).src }}"
 		data-speed="{{ parallax_speed }}"
 		data-bleed="1"
+		iosFix="0"
 		style="">
 
 		{% if overlay %}
@@ -32,6 +33,30 @@
 			</article>
 
 		{% endif %}
+	</section>
+
+	<section class="container-fluid full-width-image mob">
+
+		<figure class="image">
+			<img src="{{ TimberImage(image).src }}" alt="{{ TimberImage(image).alt }}" class="img-respond">
+		</figure>
+
+		{% if overlay %}
+
+			<article class="overlay-text">
+
+				<header>
+					<h1>{{ title }}</h1>
+				</header>
+
+				<aside class="text">
+					{{ text }}
+				</aside>
+
+			</article>
+
+		{% endif %}
+
 	</section>
 {% else %}
 
