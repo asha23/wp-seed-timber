@@ -123,6 +123,8 @@ Use the Wordpress Importer to import the sample data into your theme. This will 
 
 Once you have imported the data, you should delete this folder.
 
+Please note, that due to a bug with ACF and the WordPress XML Importer the images in this won't be added to the style guide. However you should get an idea of what everything does and it won't affect your useage. I am looking into a solution for this. Looks like this bug goes back a couple of years now. 
+
 ## wp-seed-timber Folder Structure
 
 Inside the theme, you will find the following structure. This assumes you know a bit about WordPress theming techniques. It's essentially a bare bones sensible structure.
@@ -182,6 +184,7 @@ The views folder is intended as a place to add content types for the theme. Take
 If you can see anything you'd really like added to this, open an issue.
 
 #### ToDo
-  
+
+Fix the ACF Sample Data
 Add a container image   
 Add a custom table field   
