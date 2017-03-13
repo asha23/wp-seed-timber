@@ -25,6 +25,7 @@ There are a number of pre-built Custom Fields added to this theme. You can enabl
 * Padding/Horizontal Line
 * Teasers
 * Headers
+* Carousel
 
 More will be added over time.
 
