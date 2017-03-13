@@ -1,0 +1,21 @@
+{
+  "name": "asha23/wp-seed-timber",
+  "description": "Wordpress/Timber seed theme",
+  "type":"wordpress-theme",
+  "minimum-stability" : "stable",
+  "authors": [
+    {
+        "name": "Ash Whiting",
+        "email": "ash_whiting@hotmail.com"
+    }
+  ],
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://wpackagist.org"
+    }
+  ],
+  "require": {
+	  "wpackagist-plugin/timber-library": "*"
+  }
+}
