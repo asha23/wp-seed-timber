@@ -11,3 +11,4 @@ vendor-libs
 build/manifest.json
 build/js
 build/css
+.swp
