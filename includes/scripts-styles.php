@@ -4,9 +4,9 @@
 // SCRIPTS & ENQUEUEING
 //==============================================================================
 
-add_action( 'wp_enqueue_scripts', 'seed_scripts_and_styles', 999 );
+add_action( 'wp_enqueue_scripts', 't_seed_scripts_and_styles', 999 );
 
-function seed_scripts_and_styles() {
+function t_seed_scripts_and_styles() {
 	global $wp_styles;
 	if (!is_admin()) {
 
