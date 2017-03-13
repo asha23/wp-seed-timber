@@ -1,10 +1,10 @@
 {
-  "name": "seed-generic-wordpress",
+  "name": "seed-generic-wordpress-timber",
   "description": "Pulls in some useful commonly used scripts",
   "main": "",
   "license": "(MIT OR Apache-2.0)",
   "moduleType": [],
-  "homepage": "",
+  "homepage": "https://github.com/asha23/wp-seed-timber",
   "private": true,
   "ignore": [
     "**/.*",

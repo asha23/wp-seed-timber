@@ -1,6 +1,6 @@
 {
   "name": "wp-seed-timber",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Timber Base theme for wordpress",
   "main": "index.js",
   "readme": "Gulp/Sass/Bower/Timber/Twig/Bootstrap base theme. See the gulpfile.js for more information",
