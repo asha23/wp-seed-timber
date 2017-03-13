@@ -182,7 +182,6 @@ The views folder is intended as a place to add content types for the theme. Take
 If you can see anything you'd really like added to this, open an issue.
 
 #### ToDo
-
-Add a carousel option   
+  
 Add a container image   
 Add a custom table field   
