@@ -1,5 +1,7 @@
 # wp-seed-timber
 
+[![GitHub issues](https://img.shields.io/github/issues/asha23/wp-seed-timber.svg)](https://github.com/asha23/wp-seed-timber/issues) [![GitHub forks](https://img.shields.io/github/forks/asha23/wp-seed-timber.svg)](https://github.com/asha23/wp-seed-timber/network) [![GitHub stars](https://img.shields.io/github/stars/asha23/wp-seed-timber.svg)](https://github.com/asha23/wp-seed-timber/stargazers) [![Twitter](https://img.shields.io/twitter/url/https/github.com/asha23/wp-seed-timber.svg?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=%5Bobject%20Object%5D)
+
 This is a Twig-based, Bootstrap 3 seed theme with Bower and Gulp dependency and build management. I have removed as much bloat as possible from this theme, so it doesn't have multilanguage support, widgets or sidebars. It should be considered a base theme for developing using Advanced Custom Fields and using WordPress as a pure CMS.
 
 This is meant to be a very basic starting point for theme development. You'll need to know a little bit about how to develop WordPress themes for this to be helpful for you. It's not to be considered an out-of-the-box theme that you can simply install and use right away.
@@ -126,9 +128,6 @@ Once you have imported the data, you should delete this folder.
 Please note, that due to a bug with ACF and the WordPress XML Importer the images in this won't be added to the style guide. However you should get an idea of what everything does and it won't affect your useage. I am looking into a solution for this. Looks like this bug goes back a couple of years now.
 
 ## wp-seed-timber Folder Structure
-
-![Badge](https://img.shields.io/github/downloads/atom/atom/latest/total.svg)
-
 
 Inside the theme, you will find the following structure. This assumes you know a bit about WordPress theming techniques. It's essentially a bare bones sensible structure.
 
