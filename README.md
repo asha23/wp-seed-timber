@@ -2,8 +2,6 @@
 
 [![GitHub issues](https://img.shields.io/github/issues/asha23/wp-seed-timber.svg)](https://github.com/asha23/wp-seed-timber/issues) [![GitHub forks](https://img.shields.io/github/forks/asha23/wp-seed-timber.svg)](https://github.com/asha23/wp-seed-timber/network) [![GitHub stars](https://img.shields.io/github/stars/asha23/wp-seed-timber.svg)](https://github.com/asha23/wp-seed-timber/stargazers)
 
-![](https://github.com/asha23/wp-seed-timber/blob/master/screenshot.png?raw=true)
-
 This is a Twig-based, Bootstrap 3 seed theme with Bower and Gulp dependency and build management. I have removed as much bloat as possible from this theme, so it doesn't have multilanguage support, widgets or sidebars. It should be considered a base theme for developing using Advanced Custom Fields and using WordPress as a pure CMS.
 
 This is meant to be a very basic starting point for theme development. You'll need to know a little bit about how to develop WordPress themes for this to be helpful for you. It's not to be considered an out-of-the-box theme that you can simply install and use right away.
