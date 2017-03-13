@@ -66,6 +66,10 @@ Install bower if it's not already installed on your machine
 
     $ yarn add -g bower
 
+## Composer
+
+You can run ```$ composer install ``` if you want to add the Timber plugin automatically.
+
 ## Step by step:
 
 The seed theme uses Gulp and Yarn for dependency management. Yarn is a dependency manager created by Facebook and it seems to be way faster than using npm. It will pick up all your npm dependencies and use them, so it's very similar
