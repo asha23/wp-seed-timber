@@ -1,5 +1,7 @@
 <?php
 
+// Add Flexible Content layout title
+
 function my_layout_title($title, $field, $layout, $i) {
 	if($value = get_sub_field('layout_title')) {
 		return $value;
@@ -18,6 +20,8 @@ function my_layout_title($title, $field, $layout, $i) {
 add_filter('acf/fields/flexible_content/layout_title', 'my_layout_title', 10, 4);
 
 add_action('acf/input/admin_head', 'my_acf_admin_head');
+
+// Stop instant deletion of items
 
 function my_acf_admin_head() {
 

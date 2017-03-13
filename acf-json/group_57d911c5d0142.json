@@ -46,7 +46,7 @@
                         },
                         {
                             "key": "field_57d9152463850",
-                            "label": "Block Title",
+                            "label": "Title",
                             "name": "title",
                             "type": "text",
                             "instructions": "",
@@ -65,7 +65,7 @@
                         },
                         {
                             "key": "field_57d9153063851",
-                            "label": "Block Type",
+                            "label": "Type",
                             "name": "block_type",
                             "type": "select",
                             "instructions": "Please select the block type. This can be a 2 column split (with or without images) or full width plain text block.",
@@ -212,7 +212,7 @@
                             "label": "Image",
                             "name": "split_image",
                             "type": "image",
-                            "instructions": "",
+                            "instructions": "Insert the image",
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
@@ -279,7 +279,7 @@
                             "label": "Content",
                             "name": "full_width_content",
                             "type": "wysiwyg",
-                            "instructions": "",
+                            "instructions": "Please insert your full-width text content. You can also add images here if you would like the text to wrap around the images (be careful of responsive sizing though)",
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
@@ -290,7 +290,7 @@
                             "default_value": "",
                             "tabs": "all",
                             "toolbar": "full",
-                            "media_upload": 0,
+                            "media_upload": 1,
                             "delay": 1
                         }
                     ],
@@ -327,7 +327,7 @@
                             "label": "Toggle",
                             "name": "toggle",
                             "type": "true_false",
-                            "instructions": "",
+                            "instructions": "Toggle this header on or off",
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
@@ -346,7 +346,7 @@
                             "label": "Full Width",
                             "name": "full_width",
                             "type": "true_false",
-                            "instructions": "",
+                            "instructions": "If checked, the header will stretch to the full width of the page. If unchecked it will fit within the standard content width.",
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
@@ -365,7 +365,7 @@
                             "label": "Text Alignment",
                             "name": "text_alignment",
                             "type": "radio",
-                            "instructions": "",
+                            "instructions": "Set the alignment of the text.",
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
@@ -390,7 +390,7 @@
                             "label": "Title Type",
                             "name": "title_type",
                             "type": "radio",
-                            "instructions": "",
+                            "instructions": "If set to auto, the header text will be the page title. If custom you can change this text.",
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
@@ -489,7 +489,7 @@
                             "label": "Parallax This",
                             "name": "parallax_this",
                             "type": "true_false",
-                            "instructions": "Use this sparingly",
+                            "instructions": "Use this sparingly - It will make the image parallax.",
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
@@ -508,7 +508,7 @@
                             "label": "Parallax Speed",
                             "name": "parallax_speed",
                             "type": "number",
-                            "instructions": "0 is minimum 1 is maximum (IE 0.7)",
+                            "instructions": "0 is minimum 1 is maximum (IE 0.7) - The default speed is recommended.",
                             "required": 0,
                             "conditional_logic": [
                                 [
@@ -537,7 +537,7 @@
                             "label": "Turn On Overlay",
                             "name": "turn_on_overlay",
                             "type": "true_false",
-                            "instructions": "",
+                            "instructions": "Turn on the text overlay",
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
@@ -1248,7 +1248,7 @@
                             "label": "Add a horizontal line",
                             "name": "hr",
                             "type": "true_false",
-                            "instructions": "",
+                            "instructions": "If you would like this to be a horizontal line, then check this.",
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
@@ -1267,7 +1267,7 @@
                             "label": "Ruler Height",
                             "name": "ruler_height",
                             "type": "number",
-                            "instructions": "In pixels",
+                            "instructions": "Horizontal line height in pixels",
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
@@ -1591,5 +1591,5 @@
     ],
     "active": 1,
     "description": "These are the main page based content blocks",
-    "modified": 1489160331
+    "modified": 1489413841
 }

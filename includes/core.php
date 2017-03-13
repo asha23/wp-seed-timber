@@ -1,6 +1,6 @@
 <?php
 
-
+// Main WordPress core
 
 add_action( 'after_setup_theme', 'seed_ahoy', 16 );
 
@@ -70,35 +70,8 @@ function seed_theme_support() {
 	add_image_size( 'teaser-full', 1100, 400, true );
 	add_image_size( 'teaser-main', 300, 300, true );
 
-	// wp custom background
-
-	add_theme_support( 'custom-background',
-	    array(
-	    'default-image' => '',  // background image default
-	    'default-color' => '', // background color default (dont add the #)
-	    'wp-head-callback' => '_custom_background_cb',
-	    'admin-head-callback' => '',
-	    'admin-preview-callback' => ''
-	    )
-	);
-
 	// rss thingy
 	add_theme_support('automatic-feed-links');
-
-	// adding post format support
-	add_theme_support( 'post-formats',
-		array(
-			'aside',             // title less blurb
-			'gallery',           // gallery of images
-			'link',              // quick link to other site
-			'image',             // an image
-			'quote',             // a quick quote
-			'status',            // a Facebook like status update
-			'video',             // video
-			'audio',             // audio
-			'chat'               // chat transcript
-		)
-	);
 
 	// wp menus
 	add_theme_support( 'menus' );
@@ -137,6 +110,7 @@ function theme_body_class($classes) {
 	global $post;
 	if (!$post) return $classes;
 	$classes[] = 'page-'.$post->post_name;
+	
 	if ($post->post_parent) {
 		$ppost = get_post($post->post_parent);
 		$classes[] = 'section-'.$ppost->post_name;
@@ -171,8 +145,6 @@ add_action('wp_before_admin_bar_render', 'mytheme_admin_bar_render');
 add_filter( 'wp_title', 'rw_title', 10, 3 );
 function rw_title( $title, $sep, $seplocation ) {
     global $page, $paged;
-
-    // Don't affect in feeds.
 
     if ( is_feed() )
             return $title;
@@ -222,10 +194,12 @@ function remove_menu_items(){
 	global $submenu;
 	unset($submenu['themes.php'][6]); // remove customize link
 }
+
 add_action( 'admin_menu', 'remove_menu_items');
 function remove_background_menu_item() {
 	remove_theme_support( 'custom-background' );
 }
+
 add_action( 'after_setup_theme','remove_background_menu_item', 100 );
 
 //==============================================================================
