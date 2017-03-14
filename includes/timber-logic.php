@@ -24,7 +24,8 @@ class ArloTwig extends TimberSite {
 		$context['domain']      = get_site_url();
 		$context['ajax_url']    = admin_url('admin-ajax.php');
 		$context['notes'] 		= 'These values are available everytime you call Timber::get_context();';
-		$context['menu'] 		= new TimberMenu();
+		$context['main_nav'] 	= new TimberMenu();
+		$context['footer_menu'] = new TimberMenu();
 		$context['site'] 		= $this;
 		$context['options'] 	= get_fields('option');
 		$context['id']			= get_the_ID();
