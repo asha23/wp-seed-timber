@@ -32,7 +32,7 @@
 				<div class="collapse navbar-collapse" id="nav-menu">
 			           <ul class="nav navbar-nav">
 
-			               {% for item in menu.get_items %}
+			               {% for item in main_nav.get_items %}
 
 			                   {% set classes = item.classes|join(' ') %}
 			                   {% if item.get_children %} {% set classes = classes ~ ' dropdown' %} {% endif %}
