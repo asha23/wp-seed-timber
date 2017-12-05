@@ -60,11 +60,11 @@ https://yarnpkg.com/
 
 You should install Gulp globally if it's not already installed on your machine.
 
-    $ yarn add gulp -g
+    $ npm install gulp -g
 
 Install bower if it's not already installed on your machine
 
-    $ yarn add -g bower
+    $ npm install -g bower
 
 ## Composer
 
@@ -74,7 +74,7 @@ You can run ```$ composer install ``` if you want to add the Timber plugin autom
 
 The seed theme uses Gulp and NPM for dependency management.
 
-In your terminal, cd into your theme directory and execute
+In your terminal, cd into your theme directory and execute (This did originally use Yarn, but node-sass appears to be broken inside Yarn - So I reverted to NPM)
 
     $ bower install
     $ npm install
