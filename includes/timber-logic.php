@@ -23,15 +23,14 @@ class ArloTwig extends TimberSite {
 		//globally assigned theme options
 		$context['domain']      = get_site_url();
 		$context['ajax_url']    = admin_url('admin-ajax.php');
-		$context['notes'] 		= 'These values are available everytime you call Timber::get_context();';
-		$menu_id = get_term_by('slug', 'main_nav', 'nav_menu')->term_id;
-		$context['main_nav'] = new TimberMenu($menu_id);
-		$footer_menu_id = get_term_by('slug', 'footer_nav', 'nav_menu')->term_id;
-		$context['footer_nav'] = new TimberMenu($footer_menu_id);
+		$context['notes'] 	= 'These values are available everytime you call Timber::get_context();';
 
-		$context['site'] 		= $this;
+		$context['main_nav'] 	= new TimberMenu('main_nav');
+		$context['footer_nav']	= new TimberMenu('footer_nav');
+
+		$context['site'] 	= $this;
 		$context['options'] 	= get_fields('option');
-		$context['id']			= get_the_ID();
+		$context['id']		= get_the_ID();
 		return $context;
 	}
 
