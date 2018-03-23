@@ -19,29 +19,4 @@ function my_layout_title($title, $field, $layout, $i) {
 
 add_filter('acf/fields/flexible_content/layout_title', 'my_layout_title', 10, 4);
 
-add_action('acf/input/admin_head', 'my_acf_admin_head');
-
-// Stop instant deletion of items
-
-function my_acf_admin_head() {
-
-	?>
-	<script type="text/javascript">
-	(function($) {
-
-		acf.add_action('ready', function(){
-
-			$('body').on('click', '.acf-icon.-minus.small', function( e ){
-
-				return confirm("Do you really want to delete this?");
-
-			});
-
-		});
-
-	})(jQuery);
-	</script>
-
-	<?php
-
-}
+add_filter('acf/settings/remove_wp_meta_box', '__return_true');
