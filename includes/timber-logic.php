@@ -19,7 +19,7 @@ class ArloTwig extends TimberSite {
 
 	// Register variables for using in twig template files & Add to context so it can be accessed globally.
 	function add_to_context( $context ) {
-		$content[''] = new TimberMenu('');
+		//$content[''] = new TimberMenu('');
 		//globally assigned theme options
 		$context['domain']      = get_site_url();
 		$context['ajax_url']    = admin_url('admin-ajax.php');
