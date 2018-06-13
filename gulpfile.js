@@ -1,7 +1,7 @@
 // ===========================================================================================================
 // Gulp config file for Timber Seed Wordpress Base theme
 // Author: Ash Whiting
-// Version: 0.3.1
+// Version: 0.2.6
 // ===========================================================================================================
 // ===========================================================================================================
 // Global File paths
@@ -70,6 +70,9 @@ var cssSelectorLimit = require('gulp-css-selector-limit');
 var cleanCSS = require('gulp-clean-css');
 var sourcemaps = require('gulp-sourcemaps');
 var plumber = require('gulp-plumber');
+var babel = require('gulp-babel');
+var postcss = require('gulp-postcss');
+var flexibility = require('postcss-flexibility');
 
 // Load all the other plugins by referring to package.json
 
@@ -82,7 +85,7 @@ var plumber = require('gulp-plumber');
 // ===========================================================================================================
 
 gulp.task('default', function() {
-	runSequence('bower', 'bower-files', 'modernizr', 'lint', 'scripts', 'styles');
+	runSequence('bower', 'bower-files', 'modernizr', 'lint', 'scripts', 'styles', 'watch');
 });
 
 // ===========================================================================================================
@@ -94,9 +97,9 @@ gulp.task('default', function() {
 // Be sure to check your paths and dependencies here
 // ===========================================================================================================
 
-gulp.task('bower', function() { 
+gulp.task('bower', function() {
     return plugins.bower()
-         .pipe(gulp.dest(config.bowerPath)) 
+        .pipe(gulp.dest(config.bowerPath))
 });
 
 // ===========================================================================================================
@@ -106,7 +109,6 @@ gulp.task('bower', function() { 
 gulp.task('bower-files', [
 	'bootstrap-scss',
 	'fontawesome',
-	'fontawesome-stylesheet',
 	'lightgallery-css',
 	'lightgallery-fonts',
 	'lightgallery-img',
@@ -115,6 +117,7 @@ gulp.task('bower-files', [
 	'lightgallery-fullscreen',
 	'lightgallery'
 ]);
+
 
 // ===========================================================================================================
 // Move all the bits and bobs from the bower folder into the project
@@ -133,11 +136,6 @@ gulp.task('bootstrap-scss', function () {
 gulp.task('fontawesome', function () {
     return gulp.src(config.bowerPath + 'components-font-awesome/fonts/**/**.*')
         .pipe(gulp.dest(config.destCss + '/fonts'))
-});
-
-gulp.task('fontawesome-stylesheet', function () {
-    return gulp.src(config.bowerPath + 'components-font-awesome/css/font-awesome.css')
-        .pipe(gulp.dest(config.scssPath + '/fontawesome'))
 });
 
 // Copy lightgallery fonts in destination dir
@@ -189,44 +187,42 @@ var onError = function (err) {
 	this.emit('end');
 };
 
+function reportError (error) {
+    notify().write({
+        title: 'Gulp: CSS',
+        message: 'Error'
+    });
+
+    console.log(error.toString());
+}
+
 // Styles task
 // ===========================================================================================================
 
-gulp.task('vendor-styles', function(){
-	return gulp.src([config.scssPath + '/third-party.scss']) // third party css
-		.pipe(plumber({
-			errorHandler: reportError
-		}))
-		.pipe(plugins.sass({
-			//outputStyle: 'compressed',
-            includePaths: scssFilePaths
-		}))
-		.pipe(plugins.autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'))
-		.pipe(plugins.rename('third-party.min.css'))
-		.pipe(plugins.combineMq())
-		.pipe(plugins.cleanCss({compatibility: 'ie8'}))
-		.pipe(gulp.dest(config.destCss))
-})
-
 gulp.task('styles', function () {
-	return gulp.src([config.scssPath + '/styles.scss']) // Base scss include
-		.pipe(plumber({
-			errorHandler: reportError
-		}))
+	return gulp
+		.src([config.scssPath + '/styles.scss']) // Base scss include
+		.pipe(sourcemaps.init())
+
 		.pipe(plugins.sass({
 			includePaths: scssFilePaths,
 			includePaths: bootstrapPath
 		}))
+
+		.pipe(postcss([flexibility]))
 		.pipe(plugins.autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'))
 		.pipe(plugins.rename('styles.min.css'))
 		.pipe(plugins.cleanCss({compatibility: 'ie8'}))
+		.pipe(sourcemaps.write('./maps'))
 		.pipe(gulp.dest(config.destCss))
+		.pipe(plumber({
+			errorHandler: reportError
+		}))
+		.on('error',console.log.bind(console))
 		.pipe(buster.hash({
 			manifest: './build/manifest.json',
 			template: '<%= name %>.<%= ext %>'
 		}))
-		.pipe(gulp.dest(config.destCss))
-
 });
 
 
@@ -234,13 +230,19 @@ gulp.task('styles', function () {
 // ===========================================================================================================
 
 gulp.task('scripts', function () {
-	return gulp.src(jsFileList)
+	return gulp
+		.src(jsFileList)
+		.pipe(sourcemaps.init())
 		.pipe(plumber({
 			errorHandler: reportError
 		}))
+		
 		.pipe(plugins.concat({
 			path: config.destJs + '/scripts.js',
 			cwd: ''
+		}))
+		.pipe(babel({
+			presets: ['@babel/env']
 		}))
 		.pipe(plugins.rename('scripts.min.js'))
 		.pipe(plugins.uglify())
@@ -249,7 +251,8 @@ gulp.task('scripts', function () {
 			manifest: './build/manifest.json',
 			template: '<%= name %>.<%= ext %>'
 		}))
-		.pipe(sourcemaps.write())
+		.on('error',console.log.bind(console))
+		.pipe(sourcemaps.write('./maps'))
 		.pipe(gulp.dest(config.destJs))
 });
 
@@ -329,7 +332,7 @@ gulp.task('watch', function () {
 
 });
 
-// Bo Selector limit check (bless)
+// Selector limit check
 // ===========================================================================================================
 
 gulp.task('selector', function(){
@@ -361,29 +364,3 @@ gulp.task('minify-bless', function(){
 		}))
 		.pipe(gulp.dest('build/css/'));
 });
-
-// ===========================================================================================================
-// HELPER FUNCTIONS
-// ===========================================================================================================
-
-// Error reporter function
-
-var reportError = function (error) {
-    var lineNumber = (error.lineNumber) ? 'LINE ' + error.lineNumber + ' -- ' : '';
-
-    var report = '';
-    var chalk = plugins.util.colors.yellow.bgRed;
-
-    report += chalk('😢 ') + ' [' + error.plugin + ']\n';
-    report += chalk('😢 ') + ' ' + error.message + '\n\n';
-
-    if (error.lineNumber) {
-		report += chalk('LINE:') + ' ' + error.lineNumber + '\n';
-	}
-
-    if (error.fileName) {
-		report += chalk('FILE:') + ' ' + error.fileName + '\n';
-	}
-    console.error(report);
-	this.emit('end');
-}
