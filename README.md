@@ -1,4 +1,4 @@
-# wp-seed-timber
+# wp-seed-timber - Please note that this is probably very out of date and may no longer work
 
 [![GitHub issues](https://img.shields.io/github/issues/asha23/wp-seed-timber.svg)](https://github.com/asha23/wp-seed-timber/issues) [![GitHub forks](https://img.shields.io/github/forks/asha23/wp-seed-timber.svg)](https://github.com/asha23/wp-seed-timber/network) [![GitHub stars](https://img.shields.io/github/stars/asha23/wp-seed-timber.svg)](https://github.com/asha23/wp-seed-timber/stargazers)
 
